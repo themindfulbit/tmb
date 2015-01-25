@@ -3,7 +3,7 @@
 <div class="pagination">
     {{ entries:previous folder="blog" }}
       {{ if !no_results }}
-      <div class="post design">
+      <div class="post design prev">
         <a href="{{ url }}" class="newer">
           <div class="key">Newer</div>
           <div class="title">{{ title|widont }}</div>
@@ -13,7 +13,7 @@
     {{ /entries:previous }}
     {{ entries:next folder="blog" }}
       {{ if !no_results }}
-      <div class="post mindfulness">
+      <div class="post mindfulness next">
         <a href="{{ url }}" class="older">
           <div class="key">Older</div>
           <div class="title">{{ title|widont }}</div>
