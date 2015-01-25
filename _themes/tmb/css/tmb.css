@@ -3415,21 +3415,28 @@ body #footer .cc-text img {
 /* @media screen and (min-width: 1040px) */
 @media screen and (min-width: 65em) {
   /* line 1864, ../sass/tmb.scss */
+  body #container {
+    width: 1040px;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  /* line 1871, ../sass/tmb.scss */
   body #header,
   body #core,
   body #footer {
     display: block;
     float: left;
-    width: 83.33333%;
+    width: 100%;
     padding: 0 0.75em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    margin-left: 8.33333%;
+    margin-left: 0%;
     padding: 0;
   }
-  /* line 1872, ../sass/tmb.scss */
+  /* line 1879, ../sass/tmb.scss */
   body #footer p {
     display: block;
     float: left;
@@ -3442,7 +3449,7 @@ body #footer .cc-text img {
     margin-left: 16.66667%;
     padding: 0;
   }
-  /* line 1878, ../sass/tmb.scss */
+  /* line 1885, ../sass/tmb.scss */
   body .content,
   body .search {
     display: block;
@@ -3455,7 +3462,7 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0;
   }
-  /* line 1883, ../sass/tmb.scss */
+  /* line 1890, ../sass/tmb.scss */
   body .content .post,
   body .search .post {
     display: block;
@@ -3468,7 +3475,7 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0;
   }
-  /* line 1887, ../sass/tmb.scss */
+  /* line 1894, ../sass/tmb.scss */
   body .content .post .post-header,
   body .search .post .post-header {
     display: block;
@@ -3481,7 +3488,7 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0;
   }
-  /* line 1891, ../sass/tmb.scss */
+  /* line 1898, ../sass/tmb.scss */
   body .content .post .post-header .title-banner,
   body .search .post .post-header .title-banner {
     display: block;
@@ -3494,7 +3501,7 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0 0 0.5em 0;
   }
-  /* line 1895, ../sass/tmb.scss */
+  /* line 1902, ../sass/tmb.scss */
   body .content .post .post-header .title-banner img,
   body .search .post .post-header .title-banner img {
     display: block;
@@ -3507,7 +3514,7 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0;
   }
-  /* line 1901, ../sass/tmb.scss */
+  /* line 1908, ../sass/tmb.scss */
   body .content .post .post-header .title-pattern,
   body .search .post .post-header .title-pattern {
     display: block;
@@ -3521,7 +3528,7 @@ body #footer .cc-text img {
     margin-left: 16.66667%;
     padding: 0;
   }
-  /* line 1907, ../sass/tmb.scss */
+  /* line 1914, ../sass/tmb.scss */
   body .content .post .post-header .caption,
   body .search .post .post-header .caption {
     display: block;
@@ -3535,7 +3542,7 @@ body #footer .cc-text img {
     margin-left: 0%;
     padding: 0.5em 0 0.5em;
   }
-  /* line 1914, ../sass/tmb.scss */
+  /* line 1921, ../sass/tmb.scss */
   body .content .post .pre-bar,
   body .search .post .pre-bar {
     display: block;
@@ -3550,7 +3557,7 @@ body #footer .cc-text img {
     padding: 0.5em 0 0 0;
     text-align: center;
   }
-  /* line 1920, ../sass/tmb.scss */
+  /* line 1927, ../sass/tmb.scss */
   body .content .post .pre-bar .date-ball,
   body .search .post .pre-bar .date-ball {
     display: block;
@@ -3559,7 +3566,7 @@ body #footer .cc-text img {
     width: 4em;
     margin: 0 auto;
   }
-  /* line 1927, ../sass/tmb.scss */
+  /* line 1934, ../sass/tmb.scss */
   body .content .post .pre-bar .date-ball .ball,
   body .search .post .pre-bar .date-ball .ball {
     position: absolute;
@@ -3570,7 +3577,7 @@ body #footer .cc-text img {
     border-radius: 50%;
     background-color: #dddddd;
   }
-  /* line 1937, ../sass/tmb.scss */
+  /* line 1944, ../sass/tmb.scss */
   body .content .post .pre-bar .date-ball .text-block,
   body .search .post .pre-bar .date-ball .text-block {
     position: relative;
@@ -3588,12 +3595,12 @@ body #footer .cc-text img {
     text-align: center;
     margin: 0 auto;
   }
-  /* line 1954, ../sass/tmb.scss */
+  /* line 1961, ../sass/tmb.scss */
   body .content .post .pre-bar .date-ball:hover,
   body .search .post .pre-bar .date-ball:hover {
     text-decoration: none;
   }
-  /* line 1959, ../sass/tmb.scss */
+  /* line 1966, ../sass/tmb.scss */
   body .content .post .pre-bar .icon,
   body .search .post .pre-bar .icon {
     width: 4em;
@@ -3601,7 +3608,7 @@ body #footer .cc-text img {
     clear: both;
     margin: 0 auto;
   }
-  /* line 1968, ../sass/tmb.scss */
+  /* line 1975, ../sass/tmb.scss */
   body .content .post .post-core,
   body .search .post .post-core {
     display: block;
@@ -3615,7 +3622,7 @@ body #footer .cc-text img {
     margin-left: 0%;
     padding: 0;
   }
-  /* line 1974, ../sass/tmb.scss */
+  /* line 1981, ../sass/tmb.scss */
   body .content .post .post-title,
   body .search .post .post-title {
     display: block;
@@ -3628,12 +3635,12 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0.5em 0 1em;
   }
-  /* line 1978, ../sass/tmb.scss */
+  /* line 1985, ../sass/tmb.scss */
   body .content .post .post-title .title-date,
   body .search .post .post-title .title-date {
     display: none;
   }
-  /* line 1983, ../sass/tmb.scss */
+  /* line 1990, ../sass/tmb.scss */
   body .content .post .post-body,
   body .search .post .post-body {
     display: block;
@@ -3646,7 +3653,7 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0;
   }
-  /* line 1987, ../sass/tmb.scss */
+  /* line 1994, ../sass/tmb.scss */
   body .content .post .post-body .fancybox,
   body .search .post .post-body .fancybox {
     display: block;
@@ -3660,7 +3667,7 @@ body #footer .cc-text img {
     margin-left: 0%;
     padding: 0 0 0.5em;
   }
-  /* line 1992, ../sass/tmb.scss */
+  /* line 1999, ../sass/tmb.scss */
   body .content .post .post-body .fancybox.left,
   body .search .post .post-body .fancybox.left {
     display: block;
@@ -3675,7 +3682,7 @@ body #footer .cc-text img {
     padding: 0.5em 0 0 0;
     margin-right: 2em;
   }
-  /* line 1999, ../sass/tmb.scss */
+  /* line 2006, ../sass/tmb.scss */
   body .content .post .post-body .fancybox.right,
   body .search .post .post-body .fancybox.right {
     display: block;
@@ -3691,7 +3698,7 @@ body #footer .cc-text img {
     float: right;
     margin-left: 2em;
   }
-  /* line 2007, ../sass/tmb.scss */
+  /* line 2014, ../sass/tmb.scss */
   body .content .post .post-body .fancybox.wide,
   body .search .post .post-body .fancybox.wide {
     display: block;
@@ -3705,7 +3712,7 @@ body #footer .cc-text img {
     margin-left: -25%;
     padding: 0 0 0.5em;
   }
-  /* line 2014, ../sass/tmb.scss */
+  /* line 2021, ../sass/tmb.scss */
   body .content .post .post-body aside,
   body .search .post .post-body aside {
     display: block;
@@ -3720,12 +3727,12 @@ body #footer .cc-text img {
     padding: 0.5em 0 0 0;
     margin-right: 2em;
   }
-  /* line 2020, ../sass/tmb.scss */
+  /* line 2027, ../sass/tmb.scss */
   body .content .post .post-body aside blockquote,
   body .search .post .post-body aside blockquote {
     padding: 0.5em 0 0.5em;
   }
-  /* line 2024, ../sass/tmb.scss */
+  /* line 2031, ../sass/tmb.scss */
   body .content .post .post-body aside.right,
   body .search .post .post-body aside.right {
     display: block;
@@ -3741,7 +3748,7 @@ body #footer .cc-text img {
     float: right;
     margin-left: 2em;
   }
-  /* line 2032, ../sass/tmb.scss */
+  /* line 2039, ../sass/tmb.scss */
   body .content .post .post-body aside.wide,
   body .search .post .post-body aside.wide {
     display: block;
@@ -3755,7 +3762,7 @@ body #footer .cc-text img {
     margin-left: -25%;
     padding: 0 0 0.5em;
   }
-  /* line 2039, ../sass/tmb.scss */
+  /* line 2046, ../sass/tmb.scss */
   body .content .post .post-body .has-pullquote:before,
   body .search .post .post-body .has-pullquote:before {
     content: attr(data-pullquote);
@@ -3778,7 +3785,7 @@ body #footer .cc-text img {
     font-size: 1.3em;
     line-height: 1.3em;
   }
-  /* line 2055, ../sass/tmb.scss */
+  /* line 2062, ../sass/tmb.scss */
   body .content .post .post-footer,
   body .search .post .post-footer {
     display: block;
@@ -3791,7 +3798,7 @@ body #footer .cc-text img {
     box-sizing: border-box;
     padding: 0.5em 0 0;
   }
-  /* line 2061, ../sass/tmb.scss */
+  /* line 2068, ../sass/tmb.scss */
   body .content .more-header,
   body .content .pagination-header,
   body .content .search-header,
@@ -3816,79 +3823,43 @@ body #footer .cc-text img {
     padding: 0;
   }
 }
-/* @media screen and (min-width: 1200px) */
-@media screen and (min-width: 75em) {
-  /* line 2088, ../sass/tmb.scss */
-  body #header,
-  body #core,
-  body #footer {
-    display: block;
-    float: left;
-    width: 66.66667%;
-    padding: 0 0.75em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-left: 16.66667%;
-    padding: 0;
-  }
-}
-/* @media screen and (min-width: 1360px) */
-@media screen and (min-width: 85em) {
-  /* line 2103, ../sass/tmb.scss */
-  body #header,
-  body #core,
-  body #footer {
-    display: block;
-    float: left;
-    width: 50%;
-    padding: 0 0.75em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-left: 25%;
-    padding: 0;
-  }
-}
-/* line 2305, ../sass/tmb.scss */
+/* line 2312, ../sass/tmb.scss */
 .mindfulness {
   background-color: #f6a9a9 !important;
 }
 
-/* line 2309, ../sass/tmb.scss */
+/* line 2316, ../sass/tmb.scss */
 .design {
   background-color: #a9a9f6 !important;
 }
 
-/* line 2313, ../sass/tmb.scss */
+/* line 2320, ../sass/tmb.scss */
 .technology {
   background-color: #a9f6a9 !important;
 }
 
-/* line 2317, ../sass/tmb.scss */
+/* line 2324, ../sass/tmb.scss */
 .mindfulness.design {
   background-color: #ac76c3 !important;
 }
 
-/* line 2321, ../sass/tmb.scss */
+/* line 2328, ../sass/tmb.scss */
 .design.technology {
   background-color: #76acc3 !important;
 }
 
-/* line 2325, ../sass/tmb.scss */
+/* line 2332, ../sass/tmb.scss */
 .mindfulness.technology {
   background-color: #acc376 !important;
 }
 
-/* line 2329, ../sass/tmb.scss */
+/* line 2336, ../sass/tmb.scss */
 .mindfulness.design.technology {
   background-color: #333333 !important;
   color: #FFF !important;
 }
 
-/* line 2334, ../sass/tmb.scss */
+/* line 2341, ../sass/tmb.scss */
 .no-color {
   background-color: #dddddd !important;
 }
