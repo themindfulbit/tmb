@@ -1,23 +1,39 @@
-<channel>
+<rss version="2.0">
+   <channel>
+      <title><![CDATA[{{ _site_name }}]]></title>
+      <link>{{ _site_url }}</link>
+      <description>Mindfulness, Productivity, Technology and Flying.</description>
+      <dc:language>{{ site_language }}</dc:language>
+      <dc:creator>{{ contact_email }}</dc:creator>
+      <dc:rights>Copyright {{ current_date format='Y' }}</dc:rights>
+      <dc:date>{{ current_date format="c" }}</dc:date>
+      <webMaster>erik@themindfulbit.com (Erik Hess)</webMaster>
+      <copyright>Copyright {{ current_date format='Y' }}</copyright>
+      <ttl>30</ttl>
 
-	<title><![CDATA[{{ _site_name }} | {{ folder|title }}]]></title>
-	<link>{{ _site_url }}/{{ folder }}</link>
-	<description>{{ _site_name }} {{ folder }}</description>
-	<dc:language>{{ site_language }}</dc:language>
-	<dc:creator>{{ contact_email }}</dc:creator>
-	<dc:rights>Copyright {{ current_date format='Y' }}</dc:rights>
-	<dc:date>{{ current_date format="c" }}</dc:date>
-	<admin:generatorAgent rdf:resource="http://statamic.com/" />
-
-	{{ entries:listing folder="blog" limit="20" }}
-		<item>
-			<title><![CDATA[{{ title }}]]></title>
-			<link>{{ permalink }}</link>
-			<guid>{{ permalink }}</guid>
-			<description>{{ content|full_urls|cdata }}</description>
-			<dc:subject>{{ categories_list|cdata }}</dc:subject>
-			<dc:date>{{ datestamp format="c" }}</dc:date>
-		</item>
-	{{ /entries:listing }}
-
-</channel>
+      {{ entries:listing folder="blog" limit="10" }}
+         <item>
+         <title><![CDATA[{{ if link }}{{ title }} &rArr;{{ else }}{{ title }}{{ endif }}]]></title>
+         <author>{{ author }}</author>
+         <link>
+            {{ if link }}
+               {{ link }}
+            {{ else }}
+               {{ permalink }}
+            {{ endif }}
+         </link>
+         <guid>
+            {{ if link }}
+               {{ link }}
+            {{ else }}
+               {{ permalink }}
+            {{ endif }}
+         </guid>
+         <category>article</category>
+         <dc:date>{{ datestamp format="c" }}</dc:date>
+         <dc:subject>{{ categories_list|cdata }}</dc:subject>
+         <description><![CDATA[{{ content|full_urls|cdata }}{{ if link }}<div class="permalink"><a href="{{ permalink }}">&#8251;</a></div>{{ endif }}]]></description>
+         </item>
+      {{ /entries:listing }}
+   </channel>
+</rss>
