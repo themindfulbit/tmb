@@ -32,7 +32,7 @@
          <category>article</category>
          <dc:date>{{ datestamp format="c" }}</dc:date>
          <dc:subject>{{ categories_list|cdata }}</dc:subject>
-         <description><![CDATA[{{ content|full_urls|cdata }}{{ if link }}<div class="permalink"><a href="{{ permalink }}">&#8251;</a></div>{{ endif }}]]></description>
+         <description>{{ content|full_urls|cdata }}{{ if link }}<![CDATA[<div class="permalink"><a href="{{ permalink }}">&#8251;</a></div>]]>{{ endif }}</description>
          </item>
       {{ /entries:listing }}
    </channel>
