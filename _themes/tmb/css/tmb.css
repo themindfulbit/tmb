@@ -1,0 +1,3840 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+*  Normalization, bugfixes, workarounds, and defaults.
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+/*  mostly adopted from http://necolas.github.com/normalize.css/ */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 20, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 38, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+/* line 50, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 59, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/* line 69, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 82, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 92, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 104, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 119, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 128, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 141, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+/* line 149, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 154, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 162, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 170, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 179, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 189, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 202, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 215, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 221, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 227, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 236, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 244, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 248, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 261, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 268, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE6/7
+ */
+/* line 276, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+/* line 286, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 303, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+/* line 312, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 325, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 338, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+/* line 346, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3 
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 358, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 371, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+/* line 385, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+/* line 397, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+/* line 410, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+/* line 422, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 435, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+/* line 446, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 456, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 467, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells
+ */
+/* line 481, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+*  Zoomable baseline grid, with mixins intended for responsive zooming.
+*  Along with some sensible typographic defaults. 
+*
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+/*
+*  Base configuration stylesheet for the takitapart CSS framework.
+*  This module will be included by the other modules.
+*  These variables can be overridden in your site's stylesheets.
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+/* line 42, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+body {
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 52, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+.small {
+  /* 13px / 18px */
+  font-size: 0.8125em;
+  line-height: 1.38462em;
+  margin: 1.5em 0;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+.medium, .normal, h3, p {
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em;
+  /* 24 */
+  margin: 1.5em 0;
+}
+
+/* line 68, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+.large, h2, h1 {
+  /* 26 / 36px */
+  font-size: 1.625em;
+  line-height: 1.38462em;
+  margin: 0.92308em 0;
+}
+
+/* line 76, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+.huge {
+  /* 42px / 48px */
+  font-size: 2.625em;
+  line-height: 1.14286em;
+  margin: 0.57143em 0;
+}
+
+/* line 84, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+.massive {
+  /* 68px / 72px */
+  font-size: 4.25em;
+  line-height: 1.05882em;
+  margin: 1.5em 0;
+}
+
+/* line 92, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+.gigantic {
+  /* 110px / 120px */
+  font-size: 6.875em;
+  line-height: 1.09091em;
+  margin: 1.5em 0;
+}
+
+/*
+*  A semantic, fluid, responsive grid system.
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+/*
+*  A fluid, responsive-friendly form framework. 
+*
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*
+*  Notes on use
+*  ------------
+*  + Wrap field elements with label elements. 
+*
+*/
+/* line 25, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_form.scss */
+form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 32, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_form.scss */
+form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 42, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_form.scss */
+form fieldset input, form fieldset textarea, form fieldset select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0 0.25em;
+}
+/* line 53, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_form.scss */
+form fieldset label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+*  Print specifc style defaults. From HTML5 Boilerplate.
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 16, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 17, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 18, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 19, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 20, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 21, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 22, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 23, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 24, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 26, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 27, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_print.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 60, ../sass/tmb.scss */
+.icon {
+  display: none;
+}
+/* line 63, ../sass/tmb.scss */
+.icon.skype, .icon.tomcat, .icon.textexpander, .icon.nasa, .icon.type2phone, .icon.high90, .icon.typekit, .icon.keyboard.maestro, .icon.dayone, .icon.sublime.text, .icon.apple, .icon.dropbox, .icon.siri, .icon.verizon, .icon.swiftype, .icon.hazel, .icon.textastic, .icon.squarespace, .icon.nerdquery, .icon.colorschemer, .icon.pad.and.quill, .icon.twelve.south, .icon.beast, .icon.manos, .icon.server, .icon.the.oatmeal, .icon.mst3k, .icon.compass, .icon.typography, .icon.bitly, .icon.ifttt, .icon.zagg, .icon.love, .icon.yosemite, .icon.tiger, .icon.generational, .icon.appletv, .icon.statamic, .icon.keynote, .icon.osx, .icon.humor, .icon.resistance, .icon.takitapart, .icon.frailty, .icon.daleks, .icon.korea, .icon.the.bomb, .icon.appfog, .icon.pebble, .icon.mail, .icon.panic, .icon.nest, .icon.cosmology, .icon.security, .icon.media, .icon.tmb, .icon.rhino, .icon.vf-11, .icon.vf-101, .icon.lso.school, .icon.jsf, .icon.cvw-1, .icon.cnal, .icon.vfc-13, .icon.cv-67, .icon.cvn-65, .icon.cvn-69, .icon.cvn-70, .icon.cvn-71, .icon.cvn-72, .icon.cvn-73, .icon.cvn-75, .icon.cvn-76, .icon.cvn-77, .icon.nyan.cat, .icon.reading, .icon.criticmarkup, .icon.rss, .icon.netnewswire, .icon.adobe, .icon.sketch, .icon.pixelmator, .icon.evernote, .icon.byword, .icon.superman, .icon.prism, .icon.newsblur, .icon.readkit, .icon.slowfeeds, .icon.copyright, .icon.amazon, .icon.kindle, .icon.android, .icon.iss, .icon.spacex, .icon.orbital, .icon.technical.difficulties, .icon.flickr, .icon.sonos, .icon.huffduffer, .icon.clc, .icon.powerpoint, .icon.dawn.patrol, .icon.dr.drang, .icon.heretics {
+  display: block;
+  padding: 0;
+  background-position: 50% 50%;
+  background-size: 3em auto;
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  -moz-page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+}
+/* line 177, ../sass/tmb.scss */
+.icon.tomcat {
+  background-image: url("../../../assets/icons/flying.png");
+  background-size: 4.5em auto;
+}
+/* line 182, ../sass/tmb.scss */
+.icon.textexpander {
+  background-image: url("../../../assets/icons/textexpander.png");
+  background-size: 4em auto;
+}
+/* line 187, ../sass/tmb.scss */
+.icon.nasa {
+  background-image: url("../../../assets/icons/nasa.png");
+  background-size: 4.25em auto;
+}
+/* line 192, ../sass/tmb.scss */
+.icon.type2phone {
+  background-image: url("../../../assets/icons/type2phone.png");
+  background-size: 3.3em auto;
+}
+/* line 197, ../sass/tmb.scss */
+.icon.high90 {
+  background-image: url("../../../assets/icons/high90.png");
+}
+/* line 201, ../sass/tmb.scss */
+.icon.typekit {
+  background-image: url("../../../assets/icons/typekit.png");
+}
+/* line 205, ../sass/tmb.scss */
+.icon.keyboard.maestro {
+  background-image: url("../../../assets/icons/keyboardmaestro.png");
+  background-size: 3.3em auto;
+}
+/* line 210, ../sass/tmb.scss */
+.icon.dayone {
+  background-image: url("../../../assets/icons/dayone.png");
+}
+/* line 214, ../sass/tmb.scss */
+.icon.sublime.text {
+  background-image: url("../../../assets/icons/sublime-text.png");
+}
+/* line 218, ../sass/tmb.scss */
+.icon.apple {
+  background-image: url("../../../assets/icons/apple.png");
+}
+/* line 222, ../sass/tmb.scss */
+.icon.dropbox {
+  background-image: url("../../../assets/icons/dropbox.png");
+}
+/* line 226, ../sass/tmb.scss */
+.icon.siri {
+  background-image: url("../../../assets/icons/siri.png");
+  background-size: 3.7em auto;
+}
+/* line 231, ../sass/tmb.scss */
+.icon.verizon {
+  background-image: url("../../../assets/icons/verizon.png");
+  background-size: 4.5em auto;
+}
+/* line 236, ../sass/tmb.scss */
+.icon.swiftype {
+  background-image: url("../../../assets/icons/swiftype.png");
+  background-size: 4em auto;
+}
+/* line 241, ../sass/tmb.scss */
+.icon.hazel {
+  background-image: url("../../../assets/icons/hazel.png");
+}
+/* line 245, ../sass/tmb.scss */
+.icon.textastic {
+  background-image: url("../../../assets/icons/textastic.png");
+}
+/* line 249, ../sass/tmb.scss */
+.icon.squarespace {
+  background-image: url("../../../assets/icons/squarespace.png");
+  background-size: 4.5em auto;
+}
+/* line 254, ../sass/tmb.scss */
+.icon.nerdquery {
+  background-image: url("../../../assets/icons/nerdquery.png");
+}
+/* line 258, ../sass/tmb.scss */
+.icon.colorschemer {
+  background-image: url("../../../assets/icons/colorschemer.png");
+}
+/* line 262, ../sass/tmb.scss */
+.icon.pad.and.quill {
+  background-image: url("../../../assets/icons/pq.png");
+}
+/* line 266, ../sass/tmb.scss */
+.icon.twelve.south {
+  background-image: url("../../../assets/icons/twelvesouth.png");
+}
+/* line 270, ../sass/tmb.scss */
+.icon.beast, .icon.the.oatmeal, .icon.humor {
+  background-image: url("../../../assets/icons/beast.png");
+  height: 7em;
+}
+/* line 280, ../sass/tmb.scss */
+.icon.manos, .icon.mst3k {
+  background-image: url("../../../assets/icons/manos.png");
+  height: 7em;
+  background-size: 6em 6em;
+}
+/* line 287, ../sass/tmb.scss */
+.icon.server {
+  background-image: url("../../../assets/icons/server.png");
+  height: 7em;
+}
+/* line 292, ../sass/tmb.scss */
+.icon.compass {
+  background-image: url("../../../assets/icons/compass.png");
+}
+/* line 296, ../sass/tmb.scss */
+.icon.typography {
+  background-image: url("../../../assets/icons/typography.png");
+}
+/* line 300, ../sass/tmb.scss */
+.icon.bitly {
+  background-image: url("../../../assets/icons/bitly.png");
+}
+/* line 304, ../sass/tmb.scss */
+.icon.ifttt {
+  background-image: url("../../../assets/icons/ifttt.png");
+}
+/* line 308, ../sass/tmb.scss */
+.icon.zagg {
+  background-image: url("../../../assets/icons/zagg.png");
+}
+/* line 312, ../sass/tmb.scss */
+.icon.love {
+  background-image: url("../../../assets/icons/love.png");
+}
+/* line 316, ../sass/tmb.scss */
+.icon.yosemite {
+  background-image: url("../../../assets/icons/yosemite.png");
+}
+/* line 320, ../sass/tmb.scss */
+.icon.tiger {
+  background-image: url("../../../assets/icons/tiger.png");
+  background-size: 4.5em auto;
+}
+/* line 325, ../sass/tmb.scss */
+.icon.generational {
+  background-image: url("../../../assets/icons/generational.png");
+  background-size: 3.5em auto;
+}
+/* line 330, ../sass/tmb.scss */
+.icon.appletv {
+  background-image: url("../../../assets/icons/appletv.png");
+}
+/* line 334, ../sass/tmb.scss */
+.icon.statamic {
+  background-image: url("../../../assets/icons/statamic.png");
+}
+/* line 338, ../sass/tmb.scss */
+.icon.keynote {
+  background-image: url("../../../assets/icons/keynote.png");
+}
+/* line 342, ../sass/tmb.scss */
+.icon.osx {
+  background-image: url("../../../assets/icons/osx.png");
+}
+/* line 346, ../sass/tmb.scss */
+.icon.resistance {
+  background-image: url("../../../assets/icons/resistance.png");
+}
+/* line 350, ../sass/tmb.scss */
+.icon.takitapart {
+  background-image: url("../../../assets/icons/takitapart.png");
+  background-size: 3em auto;
+}
+/* line 355, ../sass/tmb.scss */
+.icon.frailty {
+  background-image: url("../../../assets/icons/frailty.png");
+  background-size: 2.5em auto;
+}
+/* line 360, ../sass/tmb.scss */
+.icon.daleks {
+  background-image: url("../../../assets/icons/daleks.png");
+  background-size: 2em auto;
+}
+/* line 365, ../sass/tmb.scss */
+.icon.korea {
+  background-image: url("../../../assets/icons/korea.png");
+  background-size: 4.5em auto;
+}
+/* line 370, ../sass/tmb.scss */
+.icon.the.bomb {
+  background-image: url("../../../assets/icons/the-bomb.png");
+  background-size: 2.8em auto;
+}
+/* line 375, ../sass/tmb.scss */
+.icon.appfog {
+  background-image: url("../../../assets/icons/appfog.png");
+  background-size: 3em auto;
+}
+/* line 380, ../sass/tmb.scss */
+.icon.pebble {
+  background-image: url("../../../assets/icons/pebble.png");
+}
+/* line 384, ../sass/tmb.scss */
+.icon.mail {
+  background-image: url("../../../assets/icons/mail.png");
+  background-size: 4em auto;
+}
+/* line 389, ../sass/tmb.scss */
+.icon.panic {
+  background-image: url("../../../assets/icons/panic.png");
+}
+/* line 393, ../sass/tmb.scss */
+.icon.nest {
+  background-image: url("../../../assets/icons/nest.png");
+}
+/* line 397, ../sass/tmb.scss */
+.icon.cosmology {
+  background-image: url("../../../assets/icons/cosmology.png");
+}
+/* line 401, ../sass/tmb.scss */
+.icon.security {
+  background-image: url("../../../assets/icons/security.png");
+}
+/* line 405, ../sass/tmb.scss */
+.icon.media {
+  background-image: url("../../../assets/icons/media.png");
+}
+/* line 409, ../sass/tmb.scss */
+.icon.tmb {
+  background-image: url("../../../assets/icons/tmb.png");
+}
+/* line 413, ../sass/tmb.scss */
+.icon.rhino {
+  background-image: url("../../../assets/icons/rhino.png");
+  background-size: 4.5em auto;
+  height: 4em;
+}
+/* line 419, ../sass/tmb.scss */
+.icon.vf-11 {
+  background-image: url("../../../assets/icons/vf11.png");
+  background-size: 4.5em auto;
+  height: 4em;
+}
+/* line 425, ../sass/tmb.scss */
+.icon.vf-101 {
+  background-image: url("../../../assets/icons/vf101.png");
+  background-size: 4em auto;
+}
+/* line 430, ../sass/tmb.scss */
+.icon.lso.school {
+  background-image: url("../../../assets/icons/lso-school.png");
+  height: 6em;
+}
+/* line 435, ../sass/tmb.scss */
+.icon.jsf {
+  background-image: url("../../../assets/icons/jsf.png");
+  background-size: 4em auto;
+}
+/* line 440, ../sass/tmb.scss */
+.icon.cvw-1 {
+  background-image: url("../../../assets/icons/cvw1.png");
+  background-size: 4em auto;
+}
+/* line 445, ../sass/tmb.scss */
+.icon.cnal {
+  background-image: url("../../../assets/icons/cnal.png");
+  background-size: 4.7em auto;
+}
+/* line 450, ../sass/tmb.scss */
+.icon.vfc-13 {
+  background-image: url("../../../assets/icons/vfc13.png");
+  background-size: 4.2em auto;
+}
+/* line 455, ../sass/tmb.scss */
+.icon.cv-67 {
+  background-image: url("../../../assets/icons/cv67.png");
+  background-size: 4.2em auto;
+}
+/* line 460, ../sass/tmb.scss */
+.icon.cvn-65 {
+  background-image: url("../../../assets/icons/cvn65.png");
+  background-size: 4.2em auto;
+}
+/* line 465, ../sass/tmb.scss */
+.icon.cvn-69 {
+  background-image: url("../../../assets/icons/cvn69.png");
+  background-size: 4.2em auto;
+}
+/* line 470, ../sass/tmb.scss */
+.icon.cvn-70 {
+  background-image: url("../../../assets/icons/cvn70.png");
+  background-size: 4.2em auto;
+}
+/* line 475, ../sass/tmb.scss */
+.icon.cvn-71 {
+  background-image: url("../../../assets/icons/cvn71.png");
+  background-size: 4.2em auto;
+}
+/* line 480, ../sass/tmb.scss */
+.icon.cvn-72 {
+  background-image: url("../../../assets/icons/cvn72.png");
+  background-size: 4.2em auto;
+}
+/* line 485, ../sass/tmb.scss */
+.icon.cvn-73 {
+  background-image: url("../../../assets/icons/cvn73.png");
+  background-size: 4.2em auto;
+}
+/* line 490, ../sass/tmb.scss */
+.icon.cvn-74 {
+  background-image: url("../../../assets/icons/cvn74.png");
+  background-size: 4.2em auto;
+}
+/* line 495, ../sass/tmb.scss */
+.icon.cvn-75 {
+  background-image: url("../../../assets/icons/cvn75.png");
+  background-size: 4.2em auto;
+  height: 3.8em;
+}
+/* line 501, ../sass/tmb.scss */
+.icon.cvn-76 {
+  background-image: url("../../../assets/icons/cvn76.png");
+  background-size: 4.2em auto;
+  height: 3.8em;
+}
+/* line 507, ../sass/tmb.scss */
+.icon.cvn-77 {
+  background-image: url("../../../assets/icons/cvn77.png");
+  background-size: 4.2em auto;
+}
+/* line 512, ../sass/tmb.scss */
+.icon.nyan.cat {
+  background-image: url("../../../assets/icons/nyan.png");
+  background-size: 5em auto;
+}
+/* line 517, ../sass/tmb.scss */
+.icon.reading {
+  background-image: url("../../../assets/icons/reading.png");
+  background-size: 3em;
+  height: 6em;
+}
+/* line 523, ../sass/tmb.scss */
+.icon.criticmarkup {
+  background-image: url("../../../assets/icons/criticmarkup.png");
+}
+/* line 527, ../sass/tmb.scss */
+.icon.rss {
+  background-image: url("../../../assets/icons/rss.png");
+  background-size: 3em;
+}
+/* line 532, ../sass/tmb.scss */
+.icon.netnewswire {
+  background-image: url("../../../assets/icons/netnewswire.png");
+}
+/* line 536, ../sass/tmb.scss */
+.icon.adobe {
+  background-image: url("../../../assets/icons/adobe.png");
+}
+/* line 540, ../sass/tmb.scss */
+.icon.sketch {
+  background-image: url("../../../assets/icons/sketch.png");
+}
+/* line 544, ../sass/tmb.scss */
+.icon.pixelmator {
+  background-image: url("../../../assets/icons/pixelmator.png");
+}
+/* line 548, ../sass/tmb.scss */
+.icon.skype {
+  background-image: url("../../../assets/icons/skype.png");
+}
+/* line 552, ../sass/tmb.scss */
+.icon.evernote {
+  background-image: url("../../../assets/icons/evernote.png");
+}
+/* line 556, ../sass/tmb.scss */
+.icon.byword {
+  background-image: url("../../../assets/icons/byword.png");
+}
+/* line 560, ../sass/tmb.scss */
+.icon.superman {
+  background-image: url("../../../assets/icons/superman.png");
+}
+/* line 564, ../sass/tmb.scss */
+.icon.prism {
+  background-image: url("../../../assets/icons/prism.png");
+}
+/* line 568, ../sass/tmb.scss */
+.icon.newsblur {
+  background-image: url("../../../assets/icons/newsblur.png");
+}
+/* line 572, ../sass/tmb.scss */
+.icon.readkit {
+  background-image: url("../../../assets/icons/readkit.png");
+}
+/* line 576, ../sass/tmb.scss */
+.icon.slowfeeds {
+  background-image: url("../../../assets/icons/slowfeeds.png");
+}
+/* line 580, ../sass/tmb.scss */
+.icon.copyright {
+  background-image: url("../../../assets/icons/copyright.png");
+}
+/* line 584, ../sass/tmb.scss */
+.icon.amazon {
+  background-image: url("../../../assets/icons/amazon.png");
+  height: 3.5em;
+}
+/* line 589, ../sass/tmb.scss */
+.icon.kindle {
+  background-image: url("../../../assets/icons/kindle.png");
+  background-size: 3.2em auto;
+}
+/* line 594, ../sass/tmb.scss */
+.icon.android {
+  background-image: url("../../../assets/icons/android.png");
+  background-size: 3.8em auto;
+}
+/* line 599, ../sass/tmb.scss */
+.icon.iss {
+  background-image: url("../../../assets/icons/iss.png");
+  background-size: 4em auto;
+  height: 4em;
+}
+/* line 605, ../sass/tmb.scss */
+.icon.spacex {
+  background-image: url("../../../assets/icons/spacex.png");
+  background-size: 5.2em auto;
+  height: 3em;
+}
+/* line 611, ../sass/tmb.scss */
+.icon.orbital {
+  background-image: url("../../../assets/icons/orbital.png");
+  background-size: 4em auto;
+  height: 3em;
+}
+/* line 617, ../sass/tmb.scss */
+.icon.technical.difficulties {
+  background-image: url("../../../assets/icons/td.png");
+}
+/* line 621, ../sass/tmb.scss */
+.icon.flickr {
+  background-image: url("../../../assets/icons/flickr.png");
+}
+/* line 625, ../sass/tmb.scss */
+.icon.sonos {
+  background-image: url("../../../assets/icons/sonos.png");
+}
+/* line 629, ../sass/tmb.scss */
+.icon.huffduffer {
+  background-image: url("../../../assets/icons/huffduffer.png");
+  height: 3em;
+}
+/* line 634, ../sass/tmb.scss */
+.icon.clc {
+  background-image: url("../../../assets/icons/clc.png");
+  background-size: 4em;
+}
+/* line 639, ../sass/tmb.scss */
+.icon.powerpoint {
+  background-image: url("../../../assets/icons/powerpoint.png");
+}
+/* line 643, ../sass/tmb.scss */
+.icon.dawn.patrol {
+  background-image: url("../../../assets/icons/dp.png");
+}
+/* line 647, ../sass/tmb.scss */
+.icon.dr.drang {
+  background-image: url("../../../assets/icons/drang-avatar.png");
+}
+/* line 651, ../sass/tmb.scss */
+.icon.heretics {
+  background-image: url("../../../assets/icons/heretics-icon.png");
+}
+
+/* line 658, ../sass/tmb.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "futura-pt",sans-serif;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+/* line 673, ../sass/tmb.scss */
+a,
+a:active,
+a:visited,
+a:focus {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+}
+/* line 681, ../sass/tmb.scss */
+a:hover,
+a:active:hover,
+a:visited:hover,
+a:focus:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 687, ../sass/tmb.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+
+/* line 692, ../sass/tmb.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 699, ../sass/tmb.scss */
+body {
+  display: block;
+  width: 100%;
+  margin: 0 0;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "adobe-caslon-pro", serif;
+  background-color: #fbfaf5;
+  color: #333;
+  overflow-x: hidden;
+}
+/* line 22, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 27, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_grid.scss */
+body:after {
+  clear: both;
+}
+/* line 707, ../sass/tmb.scss */
+body #container {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0.8em;
+}
+/* line 712, ../sass/tmb.scss */
+body #header,
+body #core,
+body #footer {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 719, ../sass/tmb.scss */
+body #header {
+  margin-bottom: 1.5em;
+}
+/* line 723, ../sass/tmb.scss */
+body #footer {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  color: #777;
+  line-height: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 200;
+}
+/* line 732, ../sass/tmb.scss */
+body #footer p {
+  font-size: 0.7em;
+}
+/* line 736, ../sass/tmb.scss */
+body #footer a,
+body #footer a:visited,
+body #footer a:active {
+  color: #333;
+  font-weight: 400;
+}
+/* line 743, ../sass/tmb.scss */
+body #footer a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+/* line 748, ../sass/tmb.scss */
+body #footer .cc-text {
+  padding-top: 0.5em;
+}
+/* line 751, ../sass/tmb.scss */
+body #footer .cc-text img {
+  padding: 0.3em 0.5em 0.5em 0;
+  float: left;
+}
+
+/* line 761, ../sass/tmb.scss */
+.text-logo {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  font-family: "adobe-caslon-pro", serif;
+  text-transform: capitalize;
+  line-height: 1em;
+  letter-spacing: 0;
+}
+/* line 770, ../sass/tmb.scss */
+.text-logo img {
+  display: inline-block;
+  height: 1.5em;
+  padding: 0 0.3em 0 0;
+}
+/* line 776, ../sass/tmb.scss */
+.text-logo .site-title {
+  position: relative;
+  top: -0.3em;
+}
+
+/* line 782, ../sass/tmb.scss */
+.search-box {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+/* line 787, ../sass/tmb.scss */
+.search-box input {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em 0.5em 0.1em 2.5em;
+  background-color: #eee;
+  background-image: url("../img/search.svg");
+  background-size: 1.2em auto;
+  background-repeat: no-repeat;
+  background-position: 0.7em 0.65em;
+  border: 0;
+  color: #333;
+  font-family: "adobe-caslon-pro", serif;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+/* line 803, ../sass/tmb.scss */
+.content,
+.search {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 808, ../sass/tmb.scss */
+.content .post,
+.search .post {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 812, ../sass/tmb.scss */
+.content .post .post-header,
+.search .post .post-header {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 816, ../sass/tmb.scss */
+.content .post .post-header .title-banner,
+.search .post .post-header .title-banner {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0 0.5em 0;
+}
+/* line 820, ../sass/tmb.scss */
+.content .post .post-header .title-banner img,
+.search .post .post-header .title-banner img {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  height: auto;
+}
+/* line 827, ../sass/tmb.scss */
+.content .post .post-header .title-pattern,
+.search .post .post-header .title-pattern {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  background-image: url("../img/stripes.svg");
+  background-repeat: repeat;
+  height: 1.2em;
+}
+/* line 834, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.mindfulness,
+.search .post .post-header .title-pattern.mindfulness {
+  border-bottom: 0.5em solid #f6a9a9 !important;
+}
+/* line 838, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.design,
+.search .post .post-header .title-pattern.design {
+  border-bottom: 0.5em solid #a9a9f6 !important;
+}
+/* line 842, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.technology,
+.search .post .post-header .title-pattern.technology {
+  border-bottom: 0.5em solid #a9f6a9 !important;
+}
+/* line 846, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.mindfulness.design,
+.search .post .post-header .title-pattern.mindfulness.design {
+  border-bottom: 0.5em solid #ac76c3 !important;
+}
+/* line 850, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.design.technology,
+.search .post .post-header .title-pattern.design.technology {
+  border-bottom: 0.5em solid #76acc3 !important;
+}
+/* line 854, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.mindfulness.technology,
+.search .post .post-header .title-pattern.mindfulness.technology {
+  border-bottom: 0.5em solid #acc376 !important;
+}
+/* line 858, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.mindfulness.design.technology,
+.search .post .post-header .title-pattern.mindfulness.design.technology {
+  border-bottom: 0.5em solid #333333 !important;
+}
+/* line 862, ../sass/tmb.scss */
+.content .post .post-header .title-pattern.no-color,
+.search .post .post-header .title-pattern.no-color {
+  border-bottom: 0.5em solid #dddddd !important;
+}
+/* line 868, ../sass/tmb.scss */
+.content .post .post-header .caption,
+.search .post .post-header .caption {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em 0 0.5em;
+  font-style: italic;
+  font-size: 0.8em;
+}
+/* line 874, ../sass/tmb.scss */
+.content .post .post-header .caption p,
+.search .post .post-header .caption p {
+  margin: 0;
+}
+/* line 878, ../sass/tmb.scss */
+.content .post .post-header .caption a:before,
+.search .post .post-header .caption a:before {
+  content: "\00a0";
+  background-image: url("../../../assets/img/photo.svg");
+  background-repeat: no-repeat;
+  width: 1.25em;
+  display: inline-block;
+  background-size: 1.1em auto;
+  position: relative;
+  top: -0.05em;
+}
+/* line 889, ../sass/tmb.scss */
+.content .post .post-header .caption a,
+.search .post .post-header .caption a {
+  color: #aa0000;
+}
+/* line 892, ../sass/tmb.scss */
+.content .post .post-header .caption a:hover,
+.search .post .post-header .caption a:hover {
+  color: #f00;
+}
+/* line 899, ../sass/tmb.scss */
+.content .post .pre-bar,
+.search .post .pre-bar {
+  display: none;
+}
+/* line 903, ../sass/tmb.scss */
+.content .post .post-title,
+.search .post .post-title {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em 0 1em;
+}
+/* line 907, ../sass/tmb.scss */
+.content .post .post-title .title,
+.search .post .post-title .title {
+  margin: 0;
+  font-weight: 500;
+}
+/* line 912, ../sass/tmb.scss */
+.content .post .post-title .title-date,
+.search .post .post-title .title-date {
+  padding: 0;
+  font-family: "futura-pt",sans-serif;
+  text-transform: uppercase;
+  color: #777;
+}
+/* line 920, ../sass/tmb.scss */
+.content .post .post-body,
+.search .post .post-body {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 924, ../sass/tmb.scss */
+.content .post .post-body h1,
+.content .post .post-body h2,
+.content .post .post-body h3,
+.content .post .post-body h4,
+.content .post .post-body h5,
+.content .post .post-body h6,
+.search .post .post-body h1,
+.search .post .post-body h2,
+.search .post .post-body h3,
+.search .post .post-body h4,
+.search .post .post-body h5,
+.search .post .post-body h6 {
+  padding: 0;
+  margin-bottom: 0.8em;
+}
+/* line 934, ../sass/tmb.scss */
+.content .post .post-body h1,
+.search .post .post-body h1 {
+  font-size: 2em;
+}
+/* line 938, ../sass/tmb.scss */
+.content .post .post-body h2,
+.search .post .post-body h2 {
+  font-size: 1.8em;
+}
+/* line 942, ../sass/tmb.scss */
+.content .post .post-body h3,
+.search .post .post-body h3 {
+  font-size: 1.5em;
+}
+/* line 946, ../sass/tmb.scss */
+.content .post .post-body h4,
+.search .post .post-body h4 {
+  font-size: 1.3em;
+}
+/* line 950, ../sass/tmb.scss */
+.content .post .post-body h5,
+.search .post .post-body h5 {
+  font-size: 1.1em;
+}
+/* line 954, ../sass/tmb.scss */
+.content .post .post-body h6,
+.search .post .post-body h6 {
+  font-size: 1em;
+}
+/* line 958, ../sass/tmb.scss */
+.content .post .post-body a,
+.content .post .post-body a:visited,
+.content .post .post-body a:active,
+.content .post .post-body a:focus,
+.search .post .post-body a,
+.search .post .post-body a:visited,
+.search .post .post-body a:active,
+.search .post .post-body a:focus {
+  color: #aa0000;
+}
+/* line 964, ../sass/tmb.scss */
+.content .post .post-body a:hover,
+.content .post .post-body a:visited:hover,
+.content .post .post-body a:active:hover,
+.content .post .post-body a:focus:hover,
+.search .post .post-body a:hover,
+.search .post .post-body a:visited:hover,
+.search .post .post-body a:active:hover,
+.search .post .post-body a:focus:hover {
+  color: #f00;
+}
+/* line 969, ../sass/tmb.scss */
+.content .post .post-body img,
+.search .post .post-body img {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0 0.8em 0;
+  height: auto;
+}
+/* line 976, ../sass/tmb.scss */
+.content .post .post-body p:first-child,
+.search .post .post-body p:first-child {
+  font-size: 1.2em;
+}
+/* line 980, ../sass/tmb.scss */
+.content .post .post-body p,
+.search .post .post-body p {
+  padding: 0;
+}
+/* line 984, ../sass/tmb.scss */
+.content .post .post-body ul,
+.search .post .post-body ul {
+  padding: 0 0 0 1em;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  list-style-type: disc;
+}
+/* line 990, ../sass/tmb.scss */
+.content .post .post-body ul li,
+.search .post .post-body ul li {
+  padding: 0;
+  display: list-item;
+  line-height: 1.5em;
+}
+/* line 995, ../sass/tmb.scss */
+.content .post .post-body ul li p:first-child,
+.search .post .post-body ul li p:first-child {
+  font-size: 1em;
+}
+/* line 999, ../sass/tmb.scss */
+.content .post .post-body ul li p,
+.search .post .post-body ul li p {
+  float: none;
+}
+/* line 1005, ../sass/tmb.scss */
+.content .post .post-body ol,
+.search .post .post-body ol {
+  padding: 0 0 0 1.3em;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  list-style-type: decimal;
+}
+/* line 1011, ../sass/tmb.scss */
+.content .post .post-body ol li,
+.search .post .post-body ol li {
+  padding: 0;
+  display: list-item;
+  line-height: 1.5em;
+}
+/* line 1016, ../sass/tmb.scss */
+.content .post .post-body ol li p:first-child,
+.search .post .post-body ol li p:first-child {
+  font-size: 1em;
+}
+/* line 1020, ../sass/tmb.scss */
+.content .post .post-body ol li p,
+.search .post .post-body ol li p {
+  float: none;
+}
+/* line 1026, ../sass/tmb.scss */
+.content .post .post-body pre.prettyprint,
+.search .post .post-body pre.prettyprint {
+  padding: 0;
+  font-size: 0.7em;
+}
+/* line 1030, ../sass/tmb.scss */
+.content .post .post-body pre.prettyprint.linenums,
+.search .post .post-body pre.prettyprint.linenums {
+  box-shadow: inset 3em 0 0 #fbfbfc, inset 2em 0 0 #ececf0;
+}
+/* line 1034, ../sass/tmb.scss */
+.content .post .post-body pre.prettyprint ol.linenums,
+.search .post .post-body pre.prettyprint ol.linenums {
+  padding-left: 3em;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+/* line 1039, ../sass/tmb.scss */
+.content .post .post-body pre.prettyprint ol.linenums li,
+.search .post .post-body pre.prettyprint ol.linenums li {
+  padding: 0.5em;
+  margin-bottom: 0;
+}
+/* line 1046, ../sass/tmb.scss */
+.content .post .post-body code.prettyprint,
+.search .post .post-body code.prettyprint {
+  font-size: 0.8em;
+  color: #777;
+}
+/* line 1051, ../sass/tmb.scss */
+.content .post .post-body blockquote,
+.search .post .post-body blockquote {
+  padding: 0 0 0 1em;
+  margin: 0.5em 0 0.8em 0;
+  border-left: 0.5em solid #ddd;
+  color: #777;
+}
+/* line 1057, ../sass/tmb.scss */
+.content .post .post-body blockquote p:first-child,
+.search .post .post-body blockquote p:first-child {
+  font-size: 1em;
+}
+/* line 1061, ../sass/tmb.scss */
+.content .post .post-body blockquote p:last-child,
+.search .post .post-body blockquote p:last-child {
+  margin: 0;
+  padding-bottom: 0;
+}
+/* line 1066, ../sass/tmb.scss */
+.content .post .post-body blockquote cite,
+.search .post .post-body blockquote cite {
+  display: block;
+  padding: 0;
+  text-align: right;
+  font-size: 0.7em;
+  font-style: italic;
+}
+/* line 1075, ../sass/tmb.scss */
+.content .post .post-body aside,
+.search .post .post-body aside {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.8em 0 0;
+  margin-bottom: 1em;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  font-size: 1em;
+}
+/* line 1083, ../sass/tmb.scss */
+.content .post .post-body aside p:first-child,
+.search .post .post-body aside p:first-child {
+  font-size: 1em;
+}
+/* line 1087, ../sass/tmb.scss */
+.content .post .post-body aside blockquote,
+.search .post .post-body aside blockquote {
+  padding: 0.5em 0 0.5em;
+  color: #777;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  border: 0;
+}
+/* line 1099, ../sass/tmb.scss */
+.content .post .post-body .permalink,
+.search .post .post-body .permalink {
+  font-size: 1.5em;
+}
+/* line 1104, ../sass/tmb.scss */
+.content .post .post-footer,
+.search .post .post-footer {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em 0 0;
+  margin: 1em 0;
+}
+/* line 1109, ../sass/tmb.scss */
+.content .post .post-footer .title,
+.search .post .post-footer .title {
+  display: block;
+  float: left;
+  width: 33.33333%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  padding: 0;
+  margin-bottom: 0.4em;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+/* line 1121, ../sass/tmb.scss */
+.content .post .post-footer ul.category-list,
+.content .post .post-footer ul.tag-list,
+.search .post .post-footer ul.category-list,
+.search .post .post-footer ul.tag-list {
+  display: block;
+  float: left;
+  width: 66.66667%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  text-align: right;
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+/* line 1131, ../sass/tmb.scss */
+.content .post .post-footer ul.category-list li,
+.content .post .post-footer ul.tag-list li,
+.search .post .post-footer ul.category-list li,
+.search .post .post-footer ul.tag-list li {
+  display: inline;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  padding-left: 0.3em;
+}
+/* line 1137, ../sass/tmb.scss */
+.content .post .post-footer ul.category-list li a,
+.content .post .post-footer ul.category-list li a:active,
+.content .post .post-footer ul.category-list li a:visited,
+.content .post .post-footer ul.tag-list li a,
+.content .post .post-footer ul.tag-list li a:active,
+.content .post .post-footer ul.tag-list li a:visited,
+.search .post .post-footer ul.category-list li a,
+.search .post .post-footer ul.category-list li a:active,
+.search .post .post-footer ul.category-list li a:visited,
+.search .post .post-footer ul.tag-list li a,
+.search .post .post-footer ul.tag-list li a:active,
+.search .post .post-footer ul.tag-list li a:visited {
+  color: #333;
+  text-decoration: none;
+}
+/* line 1143, ../sass/tmb.scss */
+.content .post .post-footer ul.category-list li a:hover,
+.content .post .post-footer ul.category-list li a:active:hover,
+.content .post .post-footer ul.category-list li a:visited:hover,
+.content .post .post-footer ul.tag-list li a:hover,
+.content .post .post-footer ul.tag-list li a:active:hover,
+.content .post .post-footer ul.tag-list li a:visited:hover,
+.search .post .post-footer ul.category-list li a:hover,
+.search .post .post-footer ul.category-list li a:active:hover,
+.search .post .post-footer ul.category-list li a:visited:hover,
+.search .post .post-footer ul.tag-list li a:hover,
+.search .post .post-footer ul.tag-list li a:active:hover,
+.search .post .post-footer ul.tag-list li a:visited:hover {
+  color: #f00;
+}
+/* line 1152, ../sass/tmb.scss */
+.content .more-header,
+.content .pagination-header,
+.content .search-header,
+.search .more-header,
+.search .pagination-header,
+.search .search-header {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+}
+/* line 1163, ../sass/tmb.scss */
+.content .pagination,
+.search .pagination {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 1167, ../sass/tmb.scss */
+.content .pagination .post,
+.search .pagination .post {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0 0 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0.2em;
+  background-image: url("../img/stripes.svg");
+  border-left: 0.5em solid #dddddd !important;
+}
+/* line 1175, ../sass/tmb.scss */
+.content .pagination .post.mindfulness,
+.search .pagination .post.mindfulness {
+  border-left: 0.5em solid #f6a9a9 !important;
+}
+/* line 1179, ../sass/tmb.scss */
+.content .pagination .post.design,
+.search .pagination .post.design {
+  border-left: 0.5em solid #a9a9f6 !important;
+}
+/* line 1183, ../sass/tmb.scss */
+.content .pagination .post.technology,
+.search .pagination .post.technology {
+  border-left: 0.5em solid #a9f6a9 !important;
+}
+/* line 1187, ../sass/tmb.scss */
+.content .pagination .post.mindfulness.design,
+.search .pagination .post.mindfulness.design {
+  border-left: 0.5em solid #ac76c3 !important;
+}
+/* line 1191, ../sass/tmb.scss */
+.content .pagination .post.design.technology,
+.search .pagination .post.design.technology {
+  border-left: 0.5em solid #76acc3 !important;
+}
+/* line 1195, ../sass/tmb.scss */
+.content .pagination .post.mindfulness.technology,
+.search .pagination .post.mindfulness.technology {
+  border-left: 0.5em solid #acc376 !important;
+}
+/* line 1199, ../sass/tmb.scss */
+.content .pagination .post.mindfulness.design.technology,
+.search .pagination .post.mindfulness.design.technology {
+  border-left: 0.5em solid #333333 !important;
+}
+/* line 1203, ../sass/tmb.scss */
+.content .pagination .post.no-color,
+.search .pagination .post.no-color {
+  border-left: 0.5em solid #dddddd !important;
+}
+/* line 1207, ../sass/tmb.scss */
+.content .pagination .post .older,
+.content .pagination .post .newer,
+.search .pagination .post .older,
+.search .pagination .post .newer {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em 0.5em 0.8em;
+  background-color: #eee;
+}
+/* line 1213, ../sass/tmb.scss */
+.content .pagination .post .older .key,
+.content .pagination .post .newer .key,
+.search .pagination .post .older .key,
+.search .pagination .post .newer .key {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #777;
+  font-weight: 200;
+}
+/* line 1221, ../sass/tmb.scss */
+.content .pagination .post .older .title,
+.content .pagination .post .newer .title,
+.search .pagination .post .older .title,
+.search .pagination .post .newer .title {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1.1em;
+}
+/* line 1230, ../sass/tmb.scss */
+.content .pagination .post .older:hover,
+.content .pagination .post .newer:hover,
+.search .pagination .post .older:hover,
+.search .pagination .post .newer:hover {
+  background-color: #ddd;
+}
+/* line 1237, ../sass/tmb.scss */
+.content .more-posts,
+.content .search-list,
+.search .more-posts,
+.search .search-list {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0em;
+}
+/* line 1244, ../sass/tmb.scss */
+.content .more-posts .no-more,
+.content .search-list .no-more,
+.search .more-posts .no-more,
+.search .search-list .no-more {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-style: italic;
+  margin-bottom: 1em;
+  color: #777;
+}
+/* line 1252, ../sass/tmb.scss */
+.content .more-posts .post,
+.content .search-list .post,
+.search .more-posts .post,
+.search .search-list .post {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0 0 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0.2em;
+  background-image: url("../img/stripes.svg");
+  border-left: 0.5em solid #dddddd !important;
+}
+/* line 1260, ../sass/tmb.scss */
+.content .more-posts .post.mindfulness,
+.content .search-list .post.mindfulness,
+.search .more-posts .post.mindfulness,
+.search .search-list .post.mindfulness {
+  border-left: 0.5em solid #f6a9a9 !important;
+}
+/* line 1264, ../sass/tmb.scss */
+.content .more-posts .post.design,
+.content .search-list .post.design,
+.search .more-posts .post.design,
+.search .search-list .post.design {
+  border-left: 0.5em solid #a9a9f6 !important;
+}
+/* line 1268, ../sass/tmb.scss */
+.content .more-posts .post.technology,
+.content .search-list .post.technology,
+.search .more-posts .post.technology,
+.search .search-list .post.technology {
+  border-left: 0.5em solid #a9f6a9 !important;
+}
+/* line 1272, ../sass/tmb.scss */
+.content .more-posts .post.mindfulness.design,
+.content .search-list .post.mindfulness.design,
+.search .more-posts .post.mindfulness.design,
+.search .search-list .post.mindfulness.design {
+  border-left: 0.5em solid #ac76c3 !important;
+}
+/* line 1276, ../sass/tmb.scss */
+.content .more-posts .post.design.technology,
+.content .search-list .post.design.technology,
+.search .more-posts .post.design.technology,
+.search .search-list .post.design.technology {
+  border-left: 0.5em solid #76acc3 !important;
+}
+/* line 1280, ../sass/tmb.scss */
+.content .more-posts .post.mindfulness.technology,
+.content .search-list .post.mindfulness.technology,
+.search .more-posts .post.mindfulness.technology,
+.search .search-list .post.mindfulness.technology {
+  border-left: 0.5em solid #acc376 !important;
+}
+/* line 1284, ../sass/tmb.scss */
+.content .more-posts .post.mindfulness.design.technology,
+.content .search-list .post.mindfulness.design.technology,
+.search .more-posts .post.mindfulness.design.technology,
+.search .search-list .post.mindfulness.design.technology {
+  border-left: 0.5em solid #333333 !important;
+}
+/* line 1288, ../sass/tmb.scss */
+.content .more-posts .post.no-color,
+.content .search-list .post.no-color,
+.search .more-posts .post.no-color,
+.search .search-list .post.no-color {
+  border-left: 0.5em solid #dddddd !important;
+}
+/* line 1292, ../sass/tmb.scss */
+.content .more-posts .post a,
+.content .more-posts .post a:visited,
+.content .more-posts .post a:active,
+.content .more-posts .post a:focus,
+.content .search-list .post a,
+.content .search-list .post a:visited,
+.content .search-list .post a:active,
+.content .search-list .post a:focus,
+.search .more-posts .post a,
+.search .more-posts .post a:visited,
+.search .more-posts .post a:active,
+.search .more-posts .post a:focus,
+.search .search-list .post a,
+.search .search-list .post a:visited,
+.search .search-list .post a:active,
+.search .search-list .post a:focus {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #eee;
+}
+/* line 1300, ../sass/tmb.scss */
+.content .more-posts .post a .post-title,
+.content .more-posts .post a:visited .post-title,
+.content .more-posts .post a:active .post-title,
+.content .more-posts .post a:focus .post-title,
+.content .search-list .post a .post-title,
+.content .search-list .post a:visited .post-title,
+.content .search-list .post a:active .post-title,
+.content .search-list .post a:focus .post-title,
+.search .more-posts .post a .post-title,
+.search .more-posts .post a:visited .post-title,
+.search .more-posts .post a:active .post-title,
+.search .more-posts .post a:focus .post-title,
+.search .search-list .post a .post-title,
+.search .search-list .post a:visited .post-title,
+.search .search-list .post a:active .post-title,
+.search .search-list .post a:focus .post-title {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.8em 1em 0.5em;
+}
+/* line 1304, ../sass/tmb.scss */
+.content .more-posts .post a .post-title .title,
+.content .more-posts .post a:visited .post-title .title,
+.content .more-posts .post a:active .post-title .title,
+.content .more-posts .post a:focus .post-title .title,
+.content .search-list .post a .post-title .title,
+.content .search-list .post a:visited .post-title .title,
+.content .search-list .post a:active .post-title .title,
+.content .search-list .post a:focus .post-title .title,
+.search .more-posts .post a .post-title .title,
+.search .more-posts .post a:visited .post-title .title,
+.search .more-posts .post a:active .post-title .title,
+.search .more-posts .post a:focus .post-title .title,
+.search .search-list .post a .post-title .title,
+.search .search-list .post a:visited .post-title .title,
+.search .search-list .post a:active .post-title .title,
+.search .search-list .post a:focus .post-title .title {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+/* line 1311, ../sass/tmb.scss */
+.content .more-posts .post a .post-title .title-date,
+.content .more-posts .post a:visited .post-title .title-date,
+.content .more-posts .post a:active .post-title .title-date,
+.content .more-posts .post a:focus .post-title .title-date,
+.content .search-list .post a .post-title .title-date,
+.content .search-list .post a:visited .post-title .title-date,
+.content .search-list .post a:active .post-title .title-date,
+.content .search-list .post a:focus .post-title .title-date,
+.search .more-posts .post a .post-title .title-date,
+.search .more-posts .post a:visited .post-title .title-date,
+.search .more-posts .post a:active .post-title .title-date,
+.search .more-posts .post a:focus .post-title .title-date,
+.search .search-list .post a .post-title .title-date,
+.search .search-list .post a:visited .post-title .title-date,
+.search .search-list .post a:active .post-title .title-date,
+.search .search-list .post a:focus .post-title .title-date {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 0.9em;
+  font-family: "futura-pt",sans-serif;
+  text-transform: uppercase;
+  color: #777;
+}
+/* line 1322, ../sass/tmb.scss */
+.content .more-posts .post a:hover,
+.content .more-posts .post a:visited:hover,
+.content .more-posts .post a:active:hover,
+.content .more-posts .post a:focus:hover,
+.content .search-list .post a:hover,
+.content .search-list .post a:visited:hover,
+.content .search-list .post a:active:hover,
+.content .search-list .post a:focus:hover,
+.search .more-posts .post a:hover,
+.search .more-posts .post a:visited:hover,
+.search .more-posts .post a:active:hover,
+.search .more-posts .post a:focus:hover,
+.search .search-list .post a:hover,
+.search .search-list .post a:visited:hover,
+.search .search-list .post a:active:hover,
+.search .search-list .post a:focus:hover {
+  background-color: #ddd;
+}
+
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
+  /* line 1335, ../sass/tmb.scss */
+  body #container {
+    padding: 0 2em;
+  }
+}
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+  /* line 14, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+  body {
+    font-size: 1.125em;
+  }
+
+  /* line 1348, ../sass/tmb.scss */
+  body #container {
+    padding: 0;
+  }
+  /* line 1352, ../sass/tmb.scss */
+  body #header,
+  body #core,
+  body #footer {
+    display: block;
+    float: left;
+    width: 83.33333%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 8.33333%;
+    padding: 0;
+  }
+  /* line 1360, ../sass/tmb.scss */
+  body #header {
+    margin-bottom: 0.5em;
+  }
+  /* line 1363, ../sass/tmb.scss */
+  body #header .text-logo {
+    display: block;
+    float: left;
+    width: 60%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1368, ../sass/tmb.scss */
+  body #header .search-box {
+    display: block;
+    float: left;
+    width: 40%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em 0 0;
+  }
+  /* line 1375, ../sass/tmb.scss */
+  body .content,
+  body .search {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1380, ../sass/tmb.scss */
+  body .content .post,
+  body .search .post {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1384, ../sass/tmb.scss */
+  body .content .post .post-header,
+  body .search .post .post-header {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1388, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner,
+  body .search .post .post-header .title-banner {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0.5em 0;
+  }
+  /* line 1392, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner img,
+  body .search .post .post-header .title-banner img {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1398, ../sass/tmb.scss */
+  body .content .post .post-header .title-pattern,
+  body .search .post .post-header .title-pattern {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1403, ../sass/tmb.scss */
+  body .content .post .post-header .caption,
+  body .search .post .post-header .caption {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1409, ../sass/tmb.scss */
+  body .content .post .post-title,
+  body .search .post .post-title {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 1em;
+  }
+  /* line 1414, ../sass/tmb.scss */
+  body .content .post .post-body,
+  body .search .post .post-body {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1418, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox,
+  body .search .post .post-body .fancybox {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1423, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.left,
+  body .search .post .post-body .fancybox.left {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0;
+    margin-right: 2em;
+  }
+  /* line 1429, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.right,
+  body .search .post .post-body .fancybox.right {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    float: right;
+    margin-right: 0;
+    margin-left: 2em;
+  }
+  /* line 1438, ../sass/tmb.scss */
+  body .content .post .post-body aside,
+  body .search .post .post-body aside {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.8em 0 0;
+    margin-right: 2em;
+    margin-bottom: 0;
+    border: none;
+  }
+  /* line 1445, ../sass/tmb.scss */
+  body .content .post .post-body aside blockquote,
+  body .search .post .post-body aside blockquote {
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1449, ../sass/tmb.scss */
+  body .content .post .post-body aside.right,
+  body .search .post .post-body aside.right {
+    margin-left: 0%;
+    float: right;
+    margin-right: 0;
+    margin-left: 2em;
+  }
+  /* line 1457, ../sass/tmb.scss */
+  body .content .post .post-body .has-pullquote:before,
+  body .search .post .post-body .has-pullquote:before {
+    content: attr(data-pullquote);
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0 0 1em;
+    float: right;
+    margin-right: 0;
+    margin-left: 2em;
+    font-family: "futura-pt", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: #f00;
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+  /* line 1474, ../sass/tmb.scss */
+  body .content .post .post-footer,
+  body .search .post .post-footer {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 0;
+  }
+  /* line 1480, ../sass/tmb.scss */
+  body .content .more-header,
+  body .content .pagination-header,
+  body .content .search-header,
+  body .content .pagination,
+  body .content .more-posts,
+  body .content .search-list,
+  body .search .more-header,
+  body .search .pagination-header,
+  body .search .search-header,
+  body .search .pagination,
+  body .search .more-posts,
+  body .search .search-list {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  /* line 14, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+  body {
+    font-size: 1.25em;
+  }
+
+  /* line 1500, ../sass/tmb.scss */
+  body #core {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0;
+  }
+  /* line 1506, ../sass/tmb.scss */
+  body .content,
+  body .search {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1511, ../sass/tmb.scss */
+  body .content .post,
+  body .search .post {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1515, ../sass/tmb.scss */
+  body .content .post .post-header,
+  body .search .post .post-header {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1519, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner,
+  body .search .post .post-header .title-banner {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0.5em 0;
+  }
+  /* line 1523, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner img,
+  body .search .post .post-header .title-banner img {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1529, ../sass/tmb.scss */
+  body .content .post .post-header .title-pattern,
+  body .search .post .post-header .title-pattern {
+    display: block;
+    float: left;
+    width: 83.33333%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 8.33333%;
+    padding: 0;
+  }
+  /* line 1535, ../sass/tmb.scss */
+  body .content .post .post-header .caption,
+  body .search .post .post-header .caption {
+    display: block;
+    float: left;
+    width: 83.33333%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 8.33333%;
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1542, ../sass/tmb.scss */
+  body .content .post .post-core,
+  body .search .post .post-core {
+    display: block;
+    float: left;
+    width: 83.33333%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 8.33333%;
+    padding: 0;
+  }
+  /* line 1548, ../sass/tmb.scss */
+  body .content .post .post-title,
+  body .search .post .post-title {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 1em;
+  }
+  /* line 1553, ../sass/tmb.scss */
+  body .content .post .post-body,
+  body .search .post .post-body {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1557, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox,
+  body .search .post .post-body .fancybox {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1562, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.left,
+  body .search .post .post-body .fancybox.left {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0;
+    margin-right: 2em;
+  }
+  /* line 1568, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.right,
+  body .search .post .post-body .fancybox.right {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    float: right;
+    margin-right: 0;
+    margin-left: 2em;
+  }
+  /* line 1576, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.wide,
+  body .search .post .post-body .fancybox.wide {
+    display: block;
+    float: left;
+    width: 120%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -10%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1583, ../sass/tmb.scss */
+  body .content .post .post-body aside,
+  body .search .post .post-body aside {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.8em 0 0;
+    margin-right: 2em;
+  }
+  /* line 1588, ../sass/tmb.scss */
+  body .content .post .post-body aside blockquote,
+  body .search .post .post-body aside blockquote {
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1592, ../sass/tmb.scss */
+  body .content .post .post-body aside.right,
+  body .search .post .post-body aside.right {
+    margin-left: 0%;
+    float: right;
+    margin-right: 0;
+    margin-left: 2em;
+  }
+  /* line 1599, ../sass/tmb.scss */
+  body .content .post .post-body aside.wide,
+  body .search .post .post-body aside.wide {
+    display: block;
+    float: left;
+    width: 120%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -10%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1606, ../sass/tmb.scss */
+  body .content .post .post-body .has-pullquote:before,
+  body .search .post .post-body .has-pullquote:before {
+    content: attr(data-pullquote);
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0 0 1em;
+    float: right;
+    margin-right: 0;
+    margin-left: 2em;
+    font-family: "futura-pt", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: #f00;
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+  /* line 1623, ../sass/tmb.scss */
+  body .content .post .post-footer,
+  body .search .post .post-footer {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 0;
+  }
+  /* line 1629, ../sass/tmb.scss */
+  body .content .more-header,
+  body .content .pagination-header,
+  body .content .search-header,
+  body .content .pagination,
+  body .content .more-posts,
+  body .content .search-list,
+  body .search .more-header,
+  body .search .pagination-header,
+  body .search .search-header,
+  body .search .pagination,
+  body .search .more-posts,
+  body .search .search-list {
+    display: block;
+    float: left;
+    width: 83.33333%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 8.33333%;
+    padding: 0;
+  }
+}
+/* @media screen and (min-width: 880px) */
+@media screen and (min-width: 55em) {
+  /* line 1648, ../sass/tmb.scss */
+  body #header,
+  body #footer {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 16.66667%;
+    padding: 0;
+  }
+  /* line 1655, ../sass/tmb.scss */
+  body #core {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0;
+  }
+  /* line 1661, ../sass/tmb.scss */
+  body .content,
+  body .search {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1666, ../sass/tmb.scss */
+  body .content .post,
+  body .search .post {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1670, ../sass/tmb.scss */
+  body .content .post .post-header,
+  body .search .post .post-header {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1674, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner,
+  body .search .post .post-header .title-banner {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0.5em 0;
+  }
+  /* line 1678, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner img,
+  body .search .post .post-header .title-banner img {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1684, ../sass/tmb.scss */
+  body .content .post .post-header .title-pattern,
+  body .search .post .post-header .title-pattern {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 16.66667%;
+    padding: 0;
+  }
+  /* line 1690, ../sass/tmb.scss */
+  body .content .post .post-header .caption,
+  body .search .post .post-header .caption {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 16.66667%;
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1697, ../sass/tmb.scss */
+  body .content .post .pre-bar,
+  body .search .post .pre-bar {
+    display: block;
+    float: left;
+    width: 16.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+  }
+  /* line 1703, ../sass/tmb.scss */
+  body .content .post .pre-bar .date-ball,
+  body .search .post .pre-bar .date-ball {
+    display: block;
+    position: relative;
+    height: 4em;
+    width: 4em;
+    margin: 0 auto;
+  }
+  /* line 1710, ../sass/tmb.scss */
+  body .content .post .pre-bar .date-ball .ball,
+  body .search .post .pre-bar .date-ball .ball {
+    position: absolute;
+    top: 0;
+    left: 0.25em;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: #dddddd;
+  }
+  /* line 1720, ../sass/tmb.scss */
+  body .content .post .pre-bar .date-ball .text-block,
+  body .search .post .pre-bar .date-ball .text-block {
+    position: relative;
+    top: 3em;
+    left: 0;
+    width: 5em;
+    padding: 0;
+    white-space: nowrap;
+    font-family: "futura-pt", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    color: #333;
+    font-size: 0.4em;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* line 1737, ../sass/tmb.scss */
+  body .content .post .pre-bar .date-ball:hover,
+  body .search .post .pre-bar .date-ball:hover {
+    text-decoration: none;
+  }
+  /* line 1742, ../sass/tmb.scss */
+  body .content .post .pre-bar .icon,
+  body .search .post .pre-bar .icon {
+    width: 4em;
+    height: 4em;
+    clear: both;
+    margin: 0 auto;
+  }
+  /* line 1751, ../sass/tmb.scss */
+  body .content .post .post-core,
+  body .search .post .post-core {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0;
+  }
+  /* line 1757, ../sass/tmb.scss */
+  body .content .post .post-title,
+  body .search .post .post-title {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 1em;
+  }
+  /* line 1761, ../sass/tmb.scss */
+  body .content .post .post-title .title-date,
+  body .search .post .post-title .title-date {
+    display: none;
+  }
+  /* line 1766, ../sass/tmb.scss */
+  body .content .post .post-body,
+  body .search .post .post-body {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1770, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox,
+  body .search .post .post-body .fancybox {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1775, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.left,
+  body .search .post .post-body .fancybox.left {
+    display: block;
+    float: left;
+    width: 62.5%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -12.5%;
+    padding: 0.5em 0 0 0;
+    margin-right: 2em;
+  }
+  /* line 1782, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.right,
+  body .search .post .post-body .fancybox.right {
+    display: block;
+    float: left;
+    width: 62.5%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -12.5%;
+    padding: 0.5em 0 0 0;
+    float: right;
+    margin-left: 2em;
+  }
+  /* line 1790, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.wide,
+  body .search .post .post-body .fancybox.wide {
+    display: block;
+    float: left;
+    width: 150%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -25%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1797, ../sass/tmb.scss */
+  body .content .post .post-body aside,
+  body .search .post .post-body aside {
+    display: block;
+    float: left;
+    width: 62.5%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -12.5%;
+    padding: 0.5em 0 0 0;
+    margin-right: 2em;
+  }
+  /* line 1803, ../sass/tmb.scss */
+  body .content .post .post-body aside blockquote,
+  body .search .post .post-body aside blockquote {
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1807, ../sass/tmb.scss */
+  body .content .post .post-body aside.right,
+  body .search .post .post-body aside.right {
+    display: block;
+    float: left;
+    width: 62.5%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -12.5%;
+    padding: 0.5em 1em 0 0;
+    float: right;
+    margin-left: 2em;
+  }
+  /* line 1815, ../sass/tmb.scss */
+  body .content .post .post-body aside.wide,
+  body .search .post .post-body aside.wide {
+    display: block;
+    float: left;
+    width: 150%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -25%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1822, ../sass/tmb.scss */
+  body .content .post .post-body .has-pullquote:before,
+  body .search .post .post-body .has-pullquote:before {
+    content: attr(data-pullquote);
+    display: block;
+    float: left;
+    width: 62.5%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -12.5%;
+    padding: 0 0 1em;
+    float: right;
+    margin-left: 2em;
+    font-family: "futura-pt", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: #f00;
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+  /* line 1838, ../sass/tmb.scss */
+  body .content .post .post-footer,
+  body .search .post .post-footer {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 0;
+  }
+  /* line 1844, ../sass/tmb.scss */
+  body .content .more-header,
+  body .content .pagination-header,
+  body .content .search-header,
+  body .content .pagination,
+  body .content .more-posts,
+  body .content .search-list,
+  body .search .more-header,
+  body .search .pagination-header,
+  body .search .search-header,
+  body .search .pagination,
+  body .search .more-posts,
+  body .search .search-list {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 16.66667%;
+    padding: 0;
+  }
+}
+/* @media screen and (min-width: 944px) */
+@media screen and (min-width: 59em) {
+  /* line 14, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+  body {
+    font-size: 1.375em;
+  }
+
+  /* line 1863, ../sass/tmb.scss */
+  body .content .post .pre-bar .date-ball .text-block {
+    top: 2.5em;
+    font-size: 0.5em;
+  }
+}
+/* @media screen and (min-width: 1104px) */
+@media screen and (min-width: 69em) {
+  /* line 1874, ../sass/tmb.scss */
+  body #header,
+  body #footer {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 25%;
+    padding: 0;
+  }
+  /* line 1881, ../sass/tmb.scss */
+  body #core {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0;
+  }
+  /* line 1887, ../sass/tmb.scss */
+  body .content,
+  body .search {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1892, ../sass/tmb.scss */
+  body .content .post,
+  body .search .post {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1896, ../sass/tmb.scss */
+  body .content .post .post-header,
+  body .search .post .post-header {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1900, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner,
+  body .search .post .post-header .title-banner {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0.5em 0;
+  }
+  /* line 1904, ../sass/tmb.scss */
+  body .content .post .post-header .title-banner img,
+  body .search .post .post-header .title-banner img {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1910, ../sass/tmb.scss */
+  body .content .post .post-header .title-pattern,
+  body .search .post .post-header .title-pattern {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 25%;
+    padding: 0;
+  }
+  /* line 1916, ../sass/tmb.scss */
+  body .content .post .post-header .caption,
+  body .search .post .post-header .caption {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 25%;
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1923, ../sass/tmb.scss */
+  body .content .post .pre-bar,
+  body .search .post .pre-bar {
+    display: block;
+    float: left;
+    width: 16.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 8.33333%;
+    padding: 0.5em 0 0 0;
+  }
+  /* line 1929, ../sass/tmb.scss */
+  body .content .post .post-core,
+  body .search .post .post-core {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0;
+  }
+  /* line 1935, ../sass/tmb.scss */
+  body .content .post .post-title,
+  body .search .post .post-title {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 1em;
+  }
+  /* line 1940, ../sass/tmb.scss */
+  body .content .post .post-body,
+  body .search .post .post-body {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  /* line 1944, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox,
+  body .search .post .post-body .fancybox {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1949, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.left,
+  body .search .post .post-body .fancybox.left {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -33.33333%;
+    padding: 0.5em 0 0 0;
+    margin-right: 2em;
+  }
+  /* line 1956, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.right,
+  body .search .post .post-body .fancybox.right {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -33.33333%;
+    padding: 0.5em 0 0 0;
+    float: right;
+    margin-left: 2em;
+  }
+  /* line 1964, ../sass/tmb.scss */
+  body .content .post .post-body .fancybox.wide,
+  body .search .post .post-body .fancybox.wide {
+    display: block;
+    float: left;
+    width: 200%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -50%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1971, ../sass/tmb.scss */
+  body .content .post .post-body aside,
+  body .search .post .post-body aside {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -33.33333%;
+    padding: 0.5em 0 0 0;
+    margin-right: 2em;
+  }
+  /* line 1977, ../sass/tmb.scss */
+  body .content .post .post-body aside blockquote,
+  body .search .post .post-body aside blockquote {
+    padding: 0.5em 0 0.5em;
+  }
+  /* line 1981, ../sass/tmb.scss */
+  body .content .post .post-body aside.right,
+  body .search .post .post-body aside.right {
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -33.33333%;
+    padding: 0.5em 1em 0 0;
+    float: right;
+    margin-left: 2em;
+  }
+  /* line 1989, ../sass/tmb.scss */
+  body .content .post .post-body aside.wide,
+  body .search .post .post-body aside.wide {
+    display: block;
+    float: left;
+    width: 200%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -50%;
+    padding: 0 0 0.5em;
+  }
+  /* line 1996, ../sass/tmb.scss */
+  body .content .post .post-body .has-pullquote:before,
+  body .search .post .post-body .has-pullquote:before {
+    content: attr(data-pullquote);
+    display: block;
+    float: left;
+    width: 66.66667%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -33.33333%;
+    padding: 0 0 1em;
+    float: right;
+    margin-left: 2em;
+    font-family: "futura-pt", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: #f00;
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+  /* line 2012, ../sass/tmb.scss */
+  body .content .post .post-footer,
+  body .search .post .post-footer {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0 0;
+  }
+  /* line 2018, ../sass/tmb.scss */
+  body .content .more-header,
+  body .content .pagination-header,
+  body .content .search-header,
+  body .content .pagination,
+  body .content .more-posts,
+  body .content .search-list,
+  body .search .more-header,
+  body .search .pagination-header,
+  body .search .search-header,
+  body .search .pagination,
+  body .search .more-posts,
+  body .search .search-list {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 25%;
+    padding: 0;
+  }
+}
+/* @media screen and (min-width: 1264px) */
+@media screen and (min-width: 79em) {
+  /* line 14, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+  body {
+    font-size: 1.5em;
+  }
+}
+/* @media screen and (min-width: 1424px) */
+@media screen and (min-width: 89em) {
+  /* line 14, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+  body {
+    font-size: 1.625em;
+  }
+}
+/* @media screen and (min-width: 1584px) */
+@media screen and (min-width: 99em) {
+  /* line 14, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+  body {
+    font-size: 1.75em;
+  }
+}
+/* @media screen and (min-width: 1744px) */
+@media screen and (min-width: 109em) {
+  /* line 14, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_typography.scss */
+  body {
+    font-size: 1.875em;
+  }
+}
+/* line 2061, ../sass/tmb.scss */
+.mindfulness {
+  background-color: #f6a9a9 !important;
+}
+
+/* line 2065, ../sass/tmb.scss */
+.design {
+  background-color: #a9a9f6 !important;
+}
+
+/* line 2069, ../sass/tmb.scss */
+.technology {
+  background-color: #a9f6a9 !important;
+}
+
+/* line 2073, ../sass/tmb.scss */
+.mindfulness.design {
+  background-color: #ac76c3 !important;
+}
+
+/* line 2077, ../sass/tmb.scss */
+.design.technology {
+  background-color: #76acc3 !important;
+}
+
+/* line 2081, ../sass/tmb.scss */
+.mindfulness.technology {
+  background-color: #acc376 !important;
+}
+
+/* line 2085, ../sass/tmb.scss */
+.mindfulness.design.technology {
+  background-color: #333333 !important;
+  color: #FFF !important;
+}
+
+/* line 2090, ../sass/tmb.scss */
+.no-color {
+  background-color: #dddddd !important;
+}

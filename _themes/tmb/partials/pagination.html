@@ -1,0 +1,24 @@
+<h2 class="pagination-header">Nearby Posts</h2>
+
+<div class="pagination">
+    {{ entries:previous folder="blog" }}
+      {{ if !no_results }}
+      <div class="post design">
+        <a href="{{ url }}" class="newer">
+          <div class="key">Newer</div>
+          <div class="title">{{ title|widont }}</div>
+        </a>
+      </div>
+      {{ endif }}
+    {{ /entries:previous }}
+    {{ entries:next folder="blog" }}
+      {{ if !no_results }}
+      <div class="post mindfulness">
+        <a href="{{ url }}" class="older">
+          <div class="key">Older</div>
+          <div class="title">{{ title|widont }}</div>
+        </a>
+      </div>
+      {{ endif }}
+    {{ /entries:next }}
+</div>
