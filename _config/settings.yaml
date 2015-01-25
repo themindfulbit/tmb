@@ -116,9 +116,10 @@ _disable_member_cache: false
 _environments:
   dev:
     - 'http://localhost*'
-    - 'http://akimbokimono.com:8888*'
     - '*.dev:8888*'
     - '*.localip'
+  staging: 
+    - 'http://akimbokimono.com:8888*'
   live:
     - '*.com'
 
