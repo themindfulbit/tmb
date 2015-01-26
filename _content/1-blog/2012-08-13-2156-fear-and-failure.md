@@ -4,6 +4,7 @@ categories: [mindfulness, flying]
 tags: [fear, failure, the boat]
 favorite: yes
 banner: ramp.png
+caption: "Right for lineup."
 ---
 
 [Yuvi Zalkow’s][2] [new book][3] comes out this week. You should check it out.
@@ -11,7 +12,7 @@ banner: ramp.png
    [2]: http://yuvizalkow.com
    [3]: http://yuvizalkow.com/book/
 
-I say this not because I’ve read it and think it’s awesome (I’m sure it is) or because I know Yuvi and he’s a great guy (I don’t, but he sounds pretty cool). You should check it out because he’s a fellow creator who has transcended his fears and thrown a bit of himself at the world. He’s done this despite the possibility of abject failure. For that alone, he has my deepest admiration.
+I say this not because I think it’s awesome (it is) or because Yuvi is a great guy (he is). You should check it out because he’s a fellow creator who has transcended his fears and thrown a bit of himself at the world. He’s done this despite the possibility of abject failure. For that alone, he has my deepest admiration.
 
 In honor of the fear he’s experienced around his new book’s launch, [Yuvi asked us][4] to write about fear and failure. 
 
@@ -19,7 +20,7 @@ In honor of the fear he’s experienced around his new book’s launch, [Yuvi as
 
 That’s easy for me, because fear--specifically fear of failure--is my primary driver. I have gone to great lengths to manage that fear and all the things that feed it. I have not yet defeated it and probably never will, but I know that if I succeed or fail in life, it will be because of that fear. It is inseparable from who I am as a person.
 
-## Knowing Fear, Knowing Failure
+### Knowing Fear, Knowing Failure
 
 I spent 13 years on active duty as a US Naval Aviator, flying fighters from aircraft carriers. I’ve spent two more years as a reservist, pretending to be a bad guy over the high mountain desert of north-central Nevada, in a surprisingly reliable 1960’s-era export fighter. 
 
@@ -27,7 +28,9 @@ There hasn’t been a single time I’ve climbed into a jet that I haven’t bee
 
 The video below shows what it looks like to land on an aircraft carrier at night. I’ve done this more than a hundred times, often after a five hour flight in the dark, and it never gets easier or less scary. 
 
-<iframe src="http://player.vimeo.com/video/47480979" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<aside class="wide video">
+	<iframe src="http://player.vimeo.com/video/47480979" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</aside>
 
 When you perform this (admittedly) insane act, your fear doesn’t come from the possibility that you might plant yourself on the back of the ship and die in a huge fireball. The fear comes from performing the job poorly and failing in front of your peers. 
 
@@ -35,7 +38,9 @@ We’ve got guys called Landing Signal Officers (LSOs) whose sole job is to keep
 
 I spent some time as an LSO myself. Here’s a video of me as Landing Signal Officer yelling at a guy who got too close to the back of the ship. This kind of yelling-to-keep-everyone-alive happens at least once a night.
 
-<iframe src="http://player.vimeo.com/video/47480980" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<aside class="wide video">
+	<iframe src="http://player.vimeo.com/video/47480980" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</aside>
 
 There’s an old saying in Naval Aviation:
 
@@ -57,7 +62,7 @@ _”What if we get caught in a storm? What if one of us gets hurt? What if my so
 
 This sort of perspective has been a constant challenge in my personal life, as you might imagine. 
 
-## How to Control and Manage Fear and Failure
+### How to Control and Manage Fear and Failure
 
 Sorry about the misleading header, but I have no idea how to control or manage fear. I can’t. Not my kind. I’ve tried, believe me.
 
@@ -93,7 +98,7 @@ I’m not yet qualified to talk in any detail on Buddhist philosophy, but I was 
 
 Stoicism taught me that nothing but my actions, opinions and desires are in my control. Buddhism has caused me to question even that. And still I worry.
 
-## Getting on with it
+### Getting on with it
 
 Fear of failure isn’t all bad. Fear is a powerful motivator.
 
@@ -111,4 +116,4 @@ I’ve spent enough time living in fear to know that it’s probably not going a
 
 You can’t create without risking failure. Heck, you can’t walk outside your door without risking failure. Yuvi overcame all this and wrote a whole book.
 
-<p>I’m sure impressed.</p>
+I’m sure impressed.

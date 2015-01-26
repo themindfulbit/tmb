@@ -16,7 +16,7 @@ Part of the reason it's easy to forget is that most aviation UI is (both intenti
 
 Before we examine the other reasons, we first need to understand an aviation concept: angle-of-attack.
 
-## What is Angle-of Attack?
+### What is Angle-of Attack?
 
 The term "angle-of-attack" is probably unfamiliar to non-aviators. The Telegraph's article doesn't explain it well, but this issue is critical, since the aircrew's inability to recognize and correct an improper angle-of-attack appears to be the primary causal factor in Flight 447's demise.
 
@@ -34,7 +34,7 @@ Assuming your car stays nearly level, the relative wind will shift from straight
 
 In our car-off-a-cliff example, the angle between where your car is pointing and the relative wind is called angle-of-attack. Unless your car has wings, knowing your exact angle-of-attack isn't very useful to you as a driver.
 
-## Why does Angle-of Attack matter?
+### Why does Angle-of Attack matter?
 
 In aviation, angle-of-attack (often abbreviated as AOA or the Greek letter alpha) is the angle between the relative wind and a front-to-back line running through the middle of an airplane's wing. 
 
@@ -70,7 +70,7 @@ At its highest rate of descent, the Air France A330 was dropping 11,000 feet (or
 
 All the aircrew had to do was lower the nose, but they didn't realize that until it was too late.
 
-## Why didn't the crew fix the stall?
+### Why didn't the crew fix the stall?
 
 This is the core question. It appears they tried, but by the time they understood the situation it was too late. The following paragraphs are key:
 
@@ -104,7 +104,7 @@ The throttles on each aircraft also follow their manufacturers' different philos
 
 > Computers [on the Airbus A330] can automatically adjust the engine thrust to maintain whatever speed is selected by the crew. This means pilots do not need to keep fine-tuning the throttles on the cockpit’s centre console to control the power. But a curious feature of “autothrust” is that it bypasses the manual levers entirely – they simply do not move. This means pilots cannot sense the power setting by touching or glancing at the throttle levers. Instead, they have to check their computer screens. Again Boeing have adopted a different philosophy. They told the Telegraph: “We have heard again and again from airline pilots that the absence of motion with the Airbus flight deck is rather unsettling to them.” In Boeing’s system the manual handles move, even in automatic mode.
 
-## Implications for application interface design
+### Implications for application interface design
 
 Even if we're designing a web application and not a fly-by-wire flight control system these lessons have value. I'm reminded first of the [Rule of Least Surprise][11].
 
@@ -138,4 +138,4 @@ What it does mean is that using complementary techniques like color changes, mov
 
 There are no cut-and-dried solutions for all problems, but thinking through the ways things might fail and watching real users struggle with your software has genuine value for all interface designers. 
 
-<p>When things are going right, the minimalistic UI of the Airbus cockpit has greatly reduced cockpit workload.  In a crisis, those same design choices may have proven fatal.</p>
+When things are going right, the minimalistic UI of the Airbus cockpit has greatly reduced cockpit workload.  In a crisis, those same design choices may have proven fatal.

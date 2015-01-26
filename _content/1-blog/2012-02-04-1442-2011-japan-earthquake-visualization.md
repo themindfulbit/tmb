@@ -6,7 +6,7 @@ tags: [visualization, earthquakes]
 
 A remarkable visualization of earthquakes in the vicinity of Japan in 2011, including the massive M9.0 Tōhoku quake on March 11.
 
-<aside class="wide">
+<aside class="wide video">
 	<iframe width="1280" height="720" src="http://www.youtube.com/embed/eKp5cA2sM28" frameborder="0" allowfullscreen></iframe>
 </aside>
 [2011 Japan Earthquake Visualization][1]

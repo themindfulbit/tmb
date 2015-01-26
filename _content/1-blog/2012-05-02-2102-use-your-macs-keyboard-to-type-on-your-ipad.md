@@ -25,7 +25,7 @@ I wanted to be able to switch quickly between typing on my Mac and typing on my 
 
    [5]: http://www.keyboardmaestro.com/main/
 
-{{ theme:partial src="image" title="Macro" file="macro.jpg" }}
+{{ theme:partial src="image" class="right" title="Macro" file="macro.jpg" }}
 
 To return keyboard focus to the Mac, just trigger Spotlight (or the alternate launcher of your choice - I use [Alfred][7]) and you're right back.
 

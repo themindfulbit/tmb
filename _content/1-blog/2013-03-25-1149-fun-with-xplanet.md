@@ -4,8 +4,9 @@ categories: [technology]
 tags: [xplanet, wallpaper, osx, nasa]
 banner: 2013083121633.jpg
 ---
-
-<iframe src="http://player.vimeo.com/video/62631694" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<aside class="video">
+	<iframe src="http://player.vimeo.com/video/62631694" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</aside>
 
 For about the last ten years my computers have been named after planets. The scheme roughly coincided with my switch away from Windows to Linux and Mac, and was made a whole lot more fun by a little program called [Xplanet](http://xplanet.sourceforge.net/).
 
@@ -113,6 +114,8 @@ If everything all works out, something's going to happen on your desktop. *[Some
 
 Did I mention that I've set up similar views for Jupiter's other Galilean moons [Europa](http://en.wikipedia.org/wiki/Europa_(moon)), [Ganymede](http://en.wikipedia.org/wiki/Ganymede_(moon)) and [Callisto](http://en.wikipedia.org/wiki/Callisto_(moon)) on three other desktops? They look something like this:
 
-<iframe src="http://player.vimeo.com/video/62634583" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<aside class="video">
+	<iframe src="http://player.vimeo.com/video/62634583" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</aside>
 
 

@@ -2,7 +2,7 @@
 
   <ul class="more-posts">
 
-    {{ entries:listing folder="blog" conditions="tags:{ tags_option_list }, url:!{ current_url }" }}
+    {{ entries:listing folder="blog" conditions="tags:{ tags_option_list }, url:!{ current_url }" limit="5"  }}
 
     {{ if no_results }}
 

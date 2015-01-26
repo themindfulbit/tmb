@@ -34,11 +34,9 @@ The whole site from start to finish (including new copy) ended up taking about e
 We’re fans of mid-century design, so I turned to [David Ogilvy’s][4] classic “[Ogilvy on Advertising][5]” (affiliate link) for inspiration. 
 
    [4]: https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)
-   [5]: http://www.amazon.com/gp/product/039472903X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=039472903X&linkCode=as2&tag=theminbit-20
+   [5]: http://www.amazon.com/gp/product/039472903X/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=039472903X&linkCode=as2&tag=theminbit05-20&linkId=GJTARZVSIMDAIQ7Y
 
-<a class="fancybox" alt="Ogilvy on Advertising" title="Ogilvy on Advertising" rel="page" href="http://www.amazon.com/gp/product/039472903X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=039472903X&linkCode=as2&tag=theminbit-20" >
-   <img src="http://www.amazon.com/gp/product/039472903X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=039472903X&linkCode=as2&tag=theminbit-20" />
-</a>
+{{ theme:partial src="product" image="ogilvy-on-advertising.jpg" name="Ogilvy on Advertising" description='A candid and indispensable primer on all aspects of advertising from the man Time has called "the most sought after wizard in the business".' msrp="$15.99" manufacturer="" amazon="http://www.amazon.com/gp/product/039472903X/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=039472903X&linkCode=as2&tag=theminbit05-20&linkId=GJTARZVSIMDAIQ7Y" }}
 
 It also seemed like a neat design exercise. I was especially emboldened by the following passage:
 
@@ -50,7 +48,7 @@ Deciding to take him at his word, I dug into the chapter “Wanted: A Renaissanc
 
 First, we started with an illustration. Ogilvy’s advertisements usually featured a distinct and dominant image at the top. He recommends photos over drawings, but it’s tough to make a detailed photo small enough for mobile bandwidth, yet detailed enough for retina displays. Vector art is more our style anyway, so we went with that instead.
 
-{{ theme:partial src="image" title="high90 Jet" file="plane.svg" }}
+{{ theme:partial src="image" title="high90 Jet" file="plane.png" }}
 
 Bob had been playing around with a transportation theme for a while, and one of my favorite drawings of his was the wing of an airliner in front of a terminal. I grabbed his Illustrator file and made a few tweaks to emphasize our logo. For all browsers except IE8 and below, the image is an SVG, so it still looks good when scaled up for retina displays.
 
