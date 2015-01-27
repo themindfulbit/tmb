@@ -4222,8 +4222,8 @@ body #footer .cc-text img {
   /* line 2315, ../sass/tmb.scss */
   body .content .post .post-body .caption.left p,
   body .search .post .post-body .caption.left p {
-    border-left: 1px solid #ddd;
-    padding-left: 0.5em;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5em;
   }
   /* line 2321, ../sass/tmb.scss */
   body .content .post .post-body .caption.right,
@@ -4246,8 +4246,8 @@ body #footer .cc-text img {
   /* line 2330, ../sass/tmb.scss */
   body .content .post .post-body .caption.right p,
   body .search .post .post-body .caption.right p {
-    border-left: 1px solid #ddd;
-    padding-left: 0.5em;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5em;
   }
   /* line 2336, ../sass/tmb.scss */
   body .content .post .post-body .caption.wide,
