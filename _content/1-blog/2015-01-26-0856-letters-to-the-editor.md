@@ -16,7 +16,7 @@ Old-school periodicals have someone in the loop with the authority to decide whi
 
 <p class="has-pullquote" data-pullquote="It's striking how much of my mind's running critique seems to be about choosing sides">In the age of social media and comment forms, that sort of oversight is no longer generally feasible. The rewards (and consequences) of instant response and feedback can be habit forming. It's easy to let those habits seep into everyday life as well.</p>
 
-Taking a deeper look, it's striking how often a "letter to the editor" mental process seems to be running in the background of my mind. It's like I've got an amateur critic riding-along, offering color commentary on why things are good, bad, or getting in my way. 
+Taking a deeper look, it's surprising how often a "letter to the editor" mental process seems to be running in the background of my mind. It's like I've got an amateur critic riding-along, offering color commentary on why things are good, bad, or getting in my way. 
 
 Without careful attention, these observations are often generalized and turned into templates that my mind heedlessly imposes on the world-at-large. Those mental shortcuts are a perceptual filter that makes it easy to ignore or minimize the real complexity that surrounds us. It's striking how much of my mind's running critique seems to be about choosing sides &ndash; about determining what to stand with and what to stand against. 
 
