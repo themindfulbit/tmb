@@ -3,6 +3,8 @@
 		<img src="{{ _site_url }}{{ transform src="assets/img/{{ file }}" width="1200" action="resize" }}" />
 	</a>
 </div>
+{{ if title }}
 <div class="caption {{ class }}">
 	{{ title|markdown }}
 </div>
+{{ endif }}
