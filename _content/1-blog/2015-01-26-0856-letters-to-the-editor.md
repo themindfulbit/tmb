@@ -22,8 +22,8 @@ Without careful attention, these observations are often generalized and turned i
 
 Much of my life I've tried to shut this process down completely. It's not like there's a simple command like `killall critic` you can run in your brain's terminal window. Every time I try to Force Quit my judgementalism it just comes back, usually louder than before.
 
-Instead I'm trying to pay attention to those judgemental thoughts just long enough to recognize what's going on. As the editor of your own mind, you've got to read those mental "letters" whether you want to or not, but you're under no obligation to publish them. They're just thoughts, and most of them aren't that accurate or eloquent when you look at them with a focused eye.
+Instead I'm trying to pay attention to those judgemental thoughts just long enough to recognize what's going on. As the editor of your own mind, you've got to read those mental "letters" whether you want to or not, but you're under no obligation to publish them. They're just thoughts, and most of them are neither accurate nor eloquent when viewed with a focused eye.
 
-Once that recognition occurs it's not difficult to see that much of the time our minds get carried away by anticipation, fear, or anger. We can then look at the topic more closely if necessary. Most of the time I find myself letting go of the thoughts entirely.
+Once that recognition occurs you'll notice how often your mind gets carried away by anticipation, fear, and anger. While there are certainly some thoughts in there that deserve more attention and consideration, most of mine I discard entirely.
 
 What's left is a perspective that's richer, more balanced, and more measured. It usually leaves me with the realization that I have more in common with the triumphs and troubles of the world than is comfortable to admit.
