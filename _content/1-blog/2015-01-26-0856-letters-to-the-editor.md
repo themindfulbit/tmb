@@ -6,8 +6,6 @@ banner: nokken.jpg
 caption: N&oslash;kken [Nasjonalbiblioteket](https://www.flickr.com/photos/national_library_of_norway/12924042635)
 ---
 
-Test
-
 It's been a bit difficult to write recently. The easiest excuse would be to say that [the podcast](http://technicaldifficulties.us) has taken up the time I would have otherwise spent on blog posts. We're not recording as often as we used to, so that isn't really a good excuse anymore (if it ever was).
 
 While I've written dozens of drafts in the last nine months, nearly every one started off sounding like a whiny "letter to the editor". This latest site redesign has given me a chance to look at some of my earlier offerings here. That process made it clear to me that this is not a new challenge. 
