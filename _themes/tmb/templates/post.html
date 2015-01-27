@@ -8,7 +8,7 @@
 
           <div class="title-banner {{ categories_spaced_list }}">
             <a alt="{{ title }}" title="{{ title }}" rel="page" href="{{ link }}" >
-              <img src="{{ _site_url }}assets/img/{{ banner }}" />
+              <img src="{{ _site_url }}{{ transform src="assets/img/{{ banner }}" width="1200" action="resize" }}" />
             </a>
           </div>
           {{ if caption }}
@@ -21,7 +21,7 @@
 
           <div class="title-banner {{ categories_spaced_list }}">
             <a alt="{{ title }}" title="{{ title }}" rel="page" href="{{ url }}" >
-              <img src="{{ _site_url }}assets/img/{{ banner }}" />
+              <img src="{{ _site_url }}{{ transform src="assets/img/{{ banner }}" width="1200" action="resize" }}" />
             </a>
           </div>
           {{ if caption }}

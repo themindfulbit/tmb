@@ -119,7 +119,7 @@ _environments:
     - '*.dev:8888*'
     - '*.localip'
   staging: 
-    - 'http://akimbokimono.com:8888*'
+    - 'http://tmb.high90.com*'
   live:
     - '*.com'
 

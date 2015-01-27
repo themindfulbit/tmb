@@ -164,11 +164,12 @@ $all-color: #333333;
   &.powerpoint,
   &.dawn.patrol,
   &.dr.drang,
-  &.heretics {
+  &.heretics,
+  &.emptiness {
     display: block;
     padding: 0;
     background-position: 50% 50%;
-    background-size: 3em auto;
+    background-size: 3.2em auto;
     background-repeat: no-repeat;
     @include opacity(0.9);
     @include break-inside(avoid);
@@ -654,6 +655,10 @@ $all-color: #333333;
   &.heretics {
     background-image: url('../../../assets/icons/heretics-icon.png');
   }
+
+  &.emptiness {
+    background-image: url('../../../assets/icons/emptiness.png');
+  }
 }
 
 // General Styling
@@ -808,6 +813,11 @@ body {
 	@include column(12,12);
 	padding: 0;
 
+  .message {
+    @include column(12,12);
+    padding: 0;
+  }
+
 	.post {
 		@include column(12,12);
 		padding: 0;
@@ -939,19 +949,19 @@ body {
 			}
 
 			h1 {
-				font-size: 2em;
-			}
-
-			h2 {
 				font-size: 1.8em;
 			}
 
+			h2 {
+				font-size: 1.6em;
+			}
+
 			h3 {
-				font-size: 1.5em;
+				font-size: 1.4em;
 			}
 
 			h4 {
-				font-size: 1.3em;
+				font-size: 1.2em;
 			}
 
 			h5 {
@@ -988,11 +998,60 @@ body {
 				padding: 0;
 			}
 
+      table {
+        font-family: "futura-pt",sans-serif;
+        background-color: $light-background;
+        width: 100%;
+
+        tbody {
+
+          tr {
+
+            th {
+              padding: 0.2em 0.5em;
+              font-weight: bold;
+              border: 1px solid $ecru;
+              letter-spacing: 1px;
+            }
+
+            td {
+              padding: 0.2em 0.5em;
+              border: 1px solid $ecru;
+            }
+
+            &:nth-child(even) {
+              background-color: $hover-background;
+            }
+          }
+        }
+      }
+
+      dl {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0.8em;
+        list-style-type: none;
+
+        dt {
+          font-style: italic;
+        }
+
+        dd {
+          padding: 0;
+          line-height: 1.5em;
+          margin: 0 0 1em;
+        }
+      }
+
 			ul {
 				padding: 0 0 0 1em;
 				margin-top: 0;
 				margin-bottom: 0.8em;
 				list-style-type: disc;
+
+        ul, ol {
+          margin-bottom: 0;
+        }
 
 				li {
 					padding: 0;
@@ -1014,6 +1073,10 @@ body {
 				margin-top: 0;
 				margin-bottom: 0.8em;
 				list-style-type: decimal;
+
+        ul, ol {
+          margin-bottom: 0;
+        }
 
 				li {
 					padding: 0;
@@ -1055,7 +1118,19 @@ body {
 	    	color: $mid-text;
 	    }
 
-			blockquote {
+      acronym {
+        font-variant: small-caps;
+      }
+
+      kbd,
+      tt,
+      var {
+        font-family: monospace;
+        font-size: 0.9em;
+      }
+
+			blockquote,
+      address {
 				padding: 0 0 0 1em;
 				margin: 0.5em 0 0.8em 0;
 				border-left: 0.5em solid $hover-background;
@@ -1805,6 +1880,12 @@ body {
 	  	@include column(12,12);
 	  	padding: 0;
 
+      .message {
+        @include column(10,12);
+        @include push(1,12);
+        padding: 0;
+      }
+
 	  	.post {
 	  		@include column(12,12);
 	  		padding: 0;
@@ -1937,9 +2018,9 @@ body {
             }
           }
 
-	        .has-pullquote:before {
+	        aside.has-pullquote:before {
 	        	content: attr(data-pullquote);
-	          @include column(5,10);
+	          @include column(4,10);
   					@include push(0);
             padding: 0 0 0.5em 1em;
   					float: right;
@@ -1998,6 +2079,12 @@ body {
     .search {
       @include column(12,12);
       padding: 0;
+
+      .message {
+        @include column(8,12);
+        @include push(2,12);
+        padding: 0;
+      }
 
       .post {
         @include column(12,12);
@@ -2205,7 +2292,7 @@ body {
 
           .has-pullquote:before {
             content: attr(data-pullquote);
-            @include column(5,8);
+            @include column(4,8);
             @include pull(-1,8);
             padding: 0 0 0.5em 1em;
             float: right;
@@ -2474,7 +2561,7 @@ body {
 
           .has-pullquote:before {
             content: attr(data-pullquote);
-            @include column(5,8);
+            @include column(4,8);
             @include pull(-2,8);
             padding: 0 0 0.5em 1em;
             float: right;
