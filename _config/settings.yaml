@@ -119,9 +119,9 @@ _environments:
     - '*.dev:8888*'
     - '*.localip'
   staging: 
-    - 'http://tmb.high90.com*'
+    - '*tmb.high90.com*'
   live:
-    - '*.com'
+    - '*themindfulbit.com'
 
 # Set to 'true' if you want to log system messages
 _log_enabled: false
