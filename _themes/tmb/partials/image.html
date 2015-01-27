@@ -1,3 +1,8 @@
-<a class="fancybox {{ class }}" alt="{{ title }}" title="{{ title }}" rel="page" href="{{ if target }}{{ target }}{{ else }}{{ _site_url }}assets/img/{{ file }}{{ endif }}" >
-	<img src="{{ _site_url }}{{ transform src="assets/img/{{ file }}" width="1200" action="resize" }}" />
-</a>
+<div class="image-block {{ class }}">
+	<a class="fancybox" alt="{{ title }}" title="{{ title }}" rel="page" href="{{ if target }}{{ target }}{{ else }}{{ _site_url }}assets/img/{{ file }}{{ endif }}" >
+		<img src="{{ _site_url }}{{ transform src="assets/img/{{ file }}" width="1200" action="resize" }}" />
+	</a>
+</div>
+<div class="caption {{ class }}">
+	{{ title|markdown }}
+</div>

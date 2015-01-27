@@ -10,7 +10,7 @@ caption: 'Sadly, this is not a scene from "The Final Countdown" [Battlespace Awa
 
 Military presentations (and the graphics that often accompany them) have a well-deserved reputation for being [awful](http://www.wired.com/2010/08/u-s-officer-in-afghanistan-mows-down-powerpoint-rangers/?intcid=postnav), [inscrutable](http://www.wired.com/2010/09/revealed-pentagons-craziest-powerpoint-slide-ever/), or just plain [weird](http://themindfulbit.com/assets/img/ideas.jpg), especially by the appropriately high standards of Silicon Valley. There are several reasons for this, some of which are applicable to the outside world and some of which are purely a product of their environment.
 
-{{ theme:partial src="image" class="right" title="Life Cycle" file="atl_wall_chart.jpg" }}
+{{ theme:partial src="image" class="right" title="Integrated Defense Acquisition, Technology, and Logistics Life Cycle Management System &ndash; What a Mouthful" file="atl_wall_chart.jpg" }}
 
 First off, there just aren't that many design-oriented folks in government or military organizations. While I've had a ton of Navy friends with artistic talent &ndash; including some of the finest musicians and videographers I've ever met &ndash; a knack for visual design isn't considered a highly useful skill if you're on a path to a military career. Those who are compelled to practice it (like me, for better or worse) are often condemned to become *The PowerPoint Guy*.
 
@@ -22,13 +22,13 @@ Next, as a staff officer you're almost always working with an awful toolset. Kee
 
 Yep. That's it. No special fonts (can't install 'em), no Photoshop or Illustrator (can't install 'em, couldn't afford it anyway). Given those limitations, I'm impressed these presentations aren't using more [Comic Sans](http://www.fastcodesign.com/1670323/the-higgs-boson-announced-in-comic-sans-reveals-a-failing-of-modern-type).
 
-{{ theme:partial src="image" class="left" title="Indications and Warning" file="iraq-iw.jpg" }}
+{{ theme:partial src="image" class="left" title="Indications and Warnings of Civil Conflict in Iraq" file="iraq-iw.jpg" }}
 
 Another influential factor in many of these ugly presentations is a lack of time. Anyone with project management experience knows that you seemingly never have enough time to polish any timeline-based product as highly as you'd like it. I can tell you firsthand that design isn't even on the list of a staff officer's priorities, so the hard work required to make a clear, minimal visual point often gets put off until the end. That's unfortunate, given the importance of many of the issues discussed in these presentations. It's also completely understandable, given the shrinking manpower and growing demands faced by today's military.
 
 The time of the audience also comes into play here. The targets of these products are some of the busiest executives in the world. They want information products that cut the noise and get to the heart of complicated issues so they can make a decision and get on to the next problem. These are noble goals. 
 
-{{ theme:partial src="image" class="" title="Columbia Slides" file="columbia-pp.gif" }}
+{{ theme:partial src="image" class="" title="Edward Tufte's Analysis of a Columbia Risk Assessment Slide from [PowerPoint Does Rocket Science](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB)" file="columbia-pp.gif" }}
 
 Tragically, the military shares a misconception with the rest of the government and much of the business world that the slides should be able to act as a substitute for the speaker. While you'd think this would drive presentation designers towards clarity, it often does exactly the opposite. Diagrams with bulleted annotations can rarely provide the clarity and fidelity of well-written prose supported by a few well-chosen graphics. Yet busy executives don't want to take the time to read a multipage essay.
 

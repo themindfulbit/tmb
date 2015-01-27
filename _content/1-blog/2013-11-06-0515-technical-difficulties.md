@@ -8,7 +8,7 @@ caption: '[A Storm on a Mediterranean Coast](http://commons.wikimedia.org/wiki/F
 
 Today [Gabe](http://macdrifter.com) and I are launching our new podcast &ndash; [Technical Difficulties](http://technicaldifficulties.us). I'll let the show notes for the Welcome Back episode speak for themselves, but in this post I want to dive into a few of the details behind the site and its design.
 
-{{ theme:partial src="image" class="right small" title="Technical Difficulties Icon" link="{{ _site_url }}assets/img/td-icon.png" file="td-icon.png" }}
+{{ theme:partial src="image" class="right small" title="" link="{{ _site_url }}assets/img/td-icon.png" file="td-icon.png" }}
 
 I'll start off with a bit about the logo. We wanted something simple and iconic that reflected how we feel about the show, podcasting, and technology in general. Gabe and I were drawn to industrial signage, and we almost immediately thought of the hand-crushingly awesome ISO Gear Entanglement Hazard label. I'm a sucker for uppercase Futura, and really liked how the thumb on the graphic interacted with the N in "Technical". After that the icon pretty much designed itself.
 
