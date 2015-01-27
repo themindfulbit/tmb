@@ -14,3 +14,7 @@ _cache/*
 !_cache/index.html
 _logs/*
 !_logs/index.html
+
+# Other files #
+######################
+robots.txt
