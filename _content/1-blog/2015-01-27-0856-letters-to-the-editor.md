@@ -3,7 +3,7 @@ title: 'Letters to the Editor'
 categories: [mindfulness]
 tags: [writing, emptiness]
 banner: nokken.jpg
-caption: N&oslash;kken [Nasjonalbiblioteket](https://www.flickr.com/photos/national_library_of_norway/12924042635)
+caption: N&oslash;kken &ndash; Theodor Kittelsen [Nasjonalbiblioteket](https://www.flickr.com/photos/national_library_of_norway/12924042635)
 ---
 
 It's been a bit difficult to write recently. The easiest excuse would be to say that [the podcast](http://technicaldifficulties.us) has taken up the time I would have otherwise spent on blog posts. We're not recording as often as we used to, so that isn't really a good excuse anymore (if it ever was).
