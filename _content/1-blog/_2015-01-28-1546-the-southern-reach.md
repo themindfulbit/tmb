@@ -5,17 +5,15 @@ tags: [books, fiction]
 banner: lighthouse.jpg
 caption: [St. Marks Lighthouse](https://www.flickr.com/photos/floridamemory/8467121415/in/photolist-dUddcZ-8uAskS)
 ---
-I recently finished the first two books in [Jeff VanderMeer's](http://www.jeffvandermeer.com/) Southern Reach trilogy.
+I recently completed [Jeff VanderMeer's](http://www.jeffvandermeer.com/) outstanding Southern Reach trilogy.
 
-*Devoured* might be a better word, now that I think of it. The books are incredibly engrossing, and I'd likely be in the middle of the third one if it were out yet. Instead, we'll have to wait until September for the conclusion of the series. 
+*Devoured* might be a better word, now that I think of it. The books are incredibly engrossing, and we're fortunate that all three were released in the span of a single year.
 
-The wait is probably good news in the sense that it'll give me time to catch up on the sleep I lost &ndash; time spent instead reading and thinking about the novels after finally putting them down late, late, late at night. The wait is also bad news in the sense that the universe is so rich I want to keep going back there. It invites you to pull it apart to find out what makes it tick.
+I read each book twice. The universe is so rich I want to keep going back there. It invites you to pull it apart to find out what makes it tick.
 
 So what is the Southern Reach trilogy about, and why is it so compelling? 
 
-<aside markdown="1">
-{{ theme:partial src="image" title="Annihilation" file="annihilation.jpg" }}
-</aside>
+{{ theme:partial src="product" class="" image="annihilation.jpg" name="Annihilation" description="Area X has been cut off from the rest of the continent for decades. Nature has reclaimed the last vestiges of human civilization. The first expedition returned with reports of a pristine, Edenic landscape; the second expedition ended in mass suicide, the third expedition in a hail of gunfire as its members turned on one another. The members of the eleventh expedition returned as shadows of their former selves, and within weeks, all had died of cancer. In Annihilation, the first volume of Jeff VanderMeer's Southern Reach trilogy, we join the twelfth expedition." msrp="$8.99" manufacturer="" amazon="http://www.amazon.com/gp/product/B00EGJ32A6/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00EGJ32A6&linkCode=as2&tag=theminbit05-20&linkId=SAYMFS7646NXOSWK" }}
 
 ### Annihilation
 
