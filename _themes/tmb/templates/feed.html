@@ -32,7 +32,7 @@
          <category>article</category>
          <dc:date>{{ datestamp format="c" }}</dc:date>
          <dc:subject>{{ categories_list|cdata }}</dc:subject>
-         <description><![CDATA[<img src="{{ _site_url }}assets/img/{{ banner }}"/>]]>{{ caption|markdown|full_urls|cdata }}{{ content|full_urls|cdata }}{{ if link }}<![CDATA[<div class="permalink"><a href="{{ permalink }}">&#8251;</a></div>]]>{{ endif }}</description>
+         <description><![CDATA[<img src="{{ _site_url }}/assets/img/{{ banner }}"/>]]>{{ content|full_urls|cdata }}{{ if link }}<![CDATA[<div class="permalink"><a href="{{ permalink }}">&#8251;</a></div>]]>{{ endif }}</description>
          </item>
       {{ /entries:listing }}
    </channel>
