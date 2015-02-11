@@ -327,7 +327,6 @@ $all-color: #333333;
 
   &.generational {
     background-image: url('../../../assets/icons/generational.png');
-    background-size: 3.5em auto;
   }
 
   &.appletv {
@@ -1832,11 +1831,12 @@ body {
   					@include push(0);
 						padding: 0 0 0.5em 1em;
   					float: right;
-	          font-family: "futura-pt", sans-serif;
+	          font-family: "futura-pt-condensed", sans-serif;
+            font-style: italic;
 	          text-transform: uppercase;
 	          text-align: left;
 	          color: $bright-link;
-	          font-size: 1.1em;
+	          font-size: 1.8em;
 	          line-height: 1.3em;
 	        }
 	  		}
@@ -2089,11 +2089,12 @@ body {
   					@include push(0);
             padding: 0 0 0.5em 1em;
   					float: right;
-	          font-family: "futura-pt", sans-serif;
+	          font-family: "futura-pt-condensed", sans-serif;
+            font-style: italic;
 	          text-transform: uppercase;
 	          text-align: left;
 	          color: $bright-link;
-	          font-size: 1.3em;
+	          font-size: 1.8em;
 	          line-height: 1.3em;
 	        }
 	  		}
@@ -2280,7 +2281,7 @@ body {
 
             &.right {
               @include column(5,8);
-              @include pull(-2,8);
+                  @include pull(-2,8);
               float: right;
               padding: 0 0.5em 0 2em;
 
@@ -2401,11 +2402,11 @@ body {
             @include pull(-1,8);
             padding: 0 0 0.5em 1em;
             float: right;
-            font-family: "futura-pt", sans-serif;
+            font-family: "futura-pt-condensed", sans-serif;
             text-transform: uppercase;
             text-align: left;
             color: $bright-link;
-            font-size: 1.3em;
+            font-size: 1.8em;
             line-height: 1.3em;
           }
         }
@@ -2699,11 +2700,11 @@ body {
             @include pull(-2,8);
             padding: 0 0 0.5em 1em;
             float: right;
-            font-family: "futura-pt", sans-serif;
+            font-family: "futura-pt-condensed", sans-serif;
             text-transform: uppercase;
             text-align: left;
             color: $bright-link;
-            font-size: 1.3em;
+            font-size: 1.8em;
             line-height: 1.3em;
           }
         }
