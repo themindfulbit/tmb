@@ -17,7 +17,7 @@ This process is called "shifting colors", and when done properly both flag chang
 		<cite>&ndash; U.S. Navy Bluejacket's Manual</cite>
 </aside>
 
-Along those lines, I'm taking a break from posting here so I can write in an official capacity (and hopefully more regularly) at the new [high90 development blog](http://high90.haus). Joining me there is my business partner and friend [Bob VanderClay](http://twitter.com/takitapart). I've even been told we may see occasional visits by everyone's favorite show-notes guru and internet celebrity, [Potatowire](http://twitter.com/potatowire).
+Along those lines, I'm taking a break from posting here so I can write in an official capacity (and hopefully more regularly) at the new [high90 development blog](http://high90.pub). Joining me there is my business partner and friend [Bob VanderClay](http://twitter.com/takitapart). I've even been told we may see occasional visits by everyone's favorite show-notes guru and internet celebrity, [Potatowire](http://twitter.com/potatowire).
 
 {{ theme:partial src="image" class="right" title="Preparing to leave the JFK as quickly as I know how." file="on-the-cat.jpg" }}
 
