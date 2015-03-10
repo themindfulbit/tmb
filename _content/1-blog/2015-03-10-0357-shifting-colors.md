@@ -4,7 +4,7 @@ categories: [mindfulness, design, technology]
 tags: [meta]
 banner: shifting-colors.jpg
 caption:  '[U.S. Navy - Seaman Phylicia A. Hanson](http://www.navy.mil/view_image.asp?id=172285)'
-link: http://high90.haus
+link: http://high90.pub
 ---
 
 In the U.S. Navy, whenever a ship leaves port it swiftly hauls down the flags from the jackstaff at the bow and flagstaff at the stern, and raises the ensign on the gaff, behind the main mast near the middle of the ship. 
