@@ -27,7 +27,7 @@ _site_name: The Mindful Bit
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://themindfulbit.com
+_site_url: http://themindfulbit.com/
 
 # Folder name of your desired theme
 _theme: tmb
